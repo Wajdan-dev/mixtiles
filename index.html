@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mixtiles</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header class="sc-dmfyKz cZtlVS">
+        <div class="sc-fPksnM hxHrTY">
+            <div class="hamburger" id="hamburgerBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
+                    style="width: 32px; height: 32px; color: white;">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M23 21H9M23 16H9M23 11H9"></path>
+                </svg>
+            </div>
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 98 12" class="sc-jzjKHc hjsIma">
+                    <path fill="currentColor"
+                        d="M14.71.304v11.408h-2.637V4.794h-.351l-2.893 6.918H6.848l-2.86-6.918h-.384v6.918H1V.304h3.563L7.631 8.1h.432L11.13.304zM22.73.304v11.408h-2.748V.304zM35.497 11.712 33.212 7.75h-.463l-2.253 3.962h-3.42l3.692-5.784L27.204.304h3.404l2.125 3.77h.495L35.37.305h3.403L35.21 5.928l3.69 5.784zM51.492.304v2.365h-3.244v9.043h-2.765V2.67H42.24V.304zM58.442.304v11.408h-2.748V.304zM66.879.304v9.028h4.937v2.38h-7.702V.305zM84.742.304v2.365h-5.736v2.109h4.314v2.397h-4.314v2.157h5.736v2.38h-8.516V.305zM88.72 11.089V8.324c.912.64 2.461 1.246 3.883 1.246 1.151 0 1.758-.367 1.758-1.102 0-.895-.927-.975-2.653-1.422-2.189-.592-3.26-1.63-3.26-3.404C88.449 1.39 90.159 0 92.892 0c1.246 0 2.572.336 3.611.895v2.589c-.91-.528-2.3-1.023-3.563-1.023-1.103 0-1.678.32-1.678 1.023s.895.959 2.668 1.406c2.221.607 3.26 1.55 3.26 3.339 0 2.317-1.79 3.771-4.634 3.771-1.342 0-2.748-.335-3.834-.91">
+                    </path>
+                </svg>
+            </div>
+            <div class="message">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"
+                    style="width: 32px; height: 32px; color: white;">
+                    <path fill="currentColor"
+                        d="M16 19.55h.9a.9.9 0 0 0-.9-.9zm0 3.6h-.9a.9.9 0 0 0 1.394.752zm1.27-.817-.485-.759zm6.338-4.845-.685-.583-.032.04zM7.9 13.7a4.95 4.95 0 0 1 4.95-4.95v-1.8A6.75 6.75 0 0 0 6.1 13.7zm4.95 4.95A4.95 4.95 0 0 1 7.9 13.7H6.1a6.75 6.75 0 0 0 6.75 6.75zm3.15 0h-3.15v1.8H16zm.9 4.5v-3.6h-1.8v3.6zm-.115-1.576c-.462.294-.898.573-1.28.824l.99 1.504c.369-.243.794-.514 1.258-.81zm6.106-4.63c-.5.66-1.435 1.451-2.59 2.288-1.136.823-2.405 1.633-3.516 2.342l.968 1.517c1.104-.704 2.418-1.542 3.604-2.402 1.168-.845 2.295-1.769 2.969-2.657zM24.1 13.7c0 1.223-.443 2.34-1.177 3.205l1.37 1.166a6.73 6.73 0 0 0 1.607-4.37zm-4.95-4.95a4.95 4.95 0 0 1 4.95 4.95h1.8a6.75 6.75 0 0 0-6.75-6.75zm-6.3 0h6.3v-1.8h-6.3z">
+                    </path>
+                    <rect width="2.25" height="2.25" x="11.185" y="12.575" fill="currentColor" rx="1.125"></rect>
+                    <rect width="2.25" height="2.25" x="14.785" y="12.575" fill="currentColor" rx="1.125"></rect>
+                    <rect width="2.25" height="2.25" x="18.385" y="12.575" fill="currentColor" rx="1.125"></rect>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- drawer  -->
+    <div id="drawerOverlay" class="overlay"></div>
+    <div class="jss2 drawer" id="drawer">
+        <div class="sc-knesRu KVrTZ">
+            <div class="sc-kkmypM iBGdLO">
+                <a class="sc-czgmHJ eUuvkJ" data-discover="true" href="/">
+                    <div class="sc-cBYhjr bJaEAO"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 98 12" class="sc-jzjKHc eTTbPC">
+                            <path fill="currentColor"
+                                d="M14.71.304v11.408h-2.637V4.794h-.351l-2.893 6.918H6.848l-2.86-6.918h-.384v6.918H1V.304h3.563L7.631 8.1h.432L11.13.304zM22.73.304v11.408h-2.748V.304zM35.497 11.712 33.212 7.75h-.463l-2.253 3.962h-3.42l3.692-5.784L27.204.304h3.404l2.125 3.77h.495L35.37.305h3.403L35.21 5.928l3.69 5.784zM51.492.304v2.365h-3.244v9.043h-2.765V2.67H42.24V.304zM58.442.304v11.408h-2.748V.304zM66.879.304v9.028h4.937v2.38h-7.702V.305zM84.742.304v2.365h-5.736v2.109h4.314v2.397h-4.314v2.157h5.736v2.38h-8.516V.305zM88.72 11.089V8.324c.912.64 2.461 1.246 3.883 1.246 1.151 0 1.758-.367 1.758-1.102 0-.895-.927-.975-2.653-1.422-2.189-.592-3.26-1.63-3.26-3.404C88.449 1.39 90.159 0 92.892 0c1.246 0 2.572.336 3.611.895v2.589c-.91-.528-2.3-1.023-3.563-1.023-1.103 0-1.678.32-1.678 1.023s.895.959 2.668 1.406c2.221.607 3.26 1.55 3.26 3.339 0 2.317-1.79 3.771-4.634 3.771-1.342 0-2.748-.335-3.834-.91">
+                            </path>
+                        </svg></div>
+                </a>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32" class="sc-dkjaqt gmziNp"
+                id="closeDrawerBtn">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="var(--svg-stroke-width, 2)" d="M21.31 21.31 10 10M10 21.31 21.31 10"></path>
+            </svg>
+        </div>
+        <div class="sc-dnaUSb knSvjj">
+            <div class="sc-kXWJUi ehrkNx">
+                <div data-testid="menu-not-logged-in-content" class="sc-kinYwB dfqkIp">
+                    <div class="sc-ZubPq cpnLXU"><span><b>Sign up</b></span><span> to save your progress &amp; track
+                            orders</span></div><button data-testid="menu-login-button"
+                        class="sc-dHrNzZ hTZGYW sc-WChnI kkjVMR"><span class="sc-jXUnUj bWbgGQ">Login or Sign
+                            Up</span></button>
+                </div>
+            </div>
+
+            <hr class="MuiDivider-root MuiDivider-fullWidth sc-euGpHm kyxmdp css-39bbo6">
+
+            <div class="sc-jCbFiK fNAodn">
+                <nav>
+                    <ul class="sc-eJgwjL kZUkUm">
+                        <li class="sc-epPVmt boPIDw"><a class="MixtilesMenuItem" data-testid="frame-your-photos"
+                                data-discover="true" href="#" target="_self"
+                                style="text-decoration: none; color: unset;"><svg xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 32 32"
+                                    style="width: 32px; height: 32px; color: rgb(43, 5, 20);">
+                                    <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" clip-path="url(#Photo_svg__a)">
+                                        <path d="M15.99 16a2.09 2.09 0 1 0 0-4.18 2.09 2.09 0 0 0 0 4.18"></path>
+                                        <path d="M9.01 22.5a6.995 6.995 0 0 1 6.98-6.51c3.7 0 6.84 2.98 6.99 6.71">
+                                        </path>
+                                        <path d="M22.99 9H9v13.79h13.99z"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="Photo_svg__a">
+                                            <path fill="#fff" d="M8 8h15.99v15.79H8z"></path>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p class="sc-fpSrms woOjJ">Frame Your Photos</p>
+                            </a></li>
+
+                        <li class="sc-epPVmt boPIDw"><a class="MixtilesMenuItem" data-discover="true" href="#"
+                                target="_self" style="text-decoration: none; color: unset;"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
+                                    style="width: 32px; height: 32px; color: rgb(43, 5, 20);">
+                                    <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.75" clip-path="url(#GalleryWalls_svg__a)">
+                                        <path
+                                            d="M16.647 7.473H6.294v6.6h10.353zM20.53 7.34v6.746h5.176V7.34zM25.706 18.063H15.353v6.626h10.353zM6.307 18.06v6.628h5.177V18.06z">
+                                        </path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="GalleryWalls_svg__a">
+                                            <path fill="#fff" d="M5 6h22v20H5z"></path>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p class="sc-fpSrms woOjJ">Gallery Walls</p>
+                            </a></li>
+
+                        <li class="sc-epPVmt boPIDw"><a class="MixtilesMenuItem" data-testid="browse-art"
+                                data-discover="true" href="#" style="text-decoration: none; color: unset;"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"
+                                    style="width: 32px; height: 32px; color: rgb(43, 5, 20);">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M11.57 17.99 9 23h14.36l-1.29-2.53M19.47 15.41 16.18 9l-2 3.91"></path>
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M15.32 13.01H8V18h7.32zM21.5 20a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"></path>
+                                </svg>
+                                <p class="sc-fpSrms woOjJ">Browse Art Collection</p>
+                            </a></li>
+                    </ul>
+                    <hr class="MuiDivider-root MuiDivider-fullWidth sc-euGpHm kyxmdp css-39bbo6">
+
+                    <ul class="sc-eJgwjL kZUkUm">
+                        <li class="sc-epPVmt boPIDw"><a class="MixtilesMenuItem" data-testid="gift-card-menu-item"
+                                data-discover="true" href="/gift" target="_self"
+                                style="text-decoration: none; color: unset;"><svg xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 32 32"
+                                    style="width: 32px; height: 32px; color: rgb(43, 5, 20);">
+                                    <path stroke="currentColor" stroke-miterlimit="10" stroke-width="2"
+                                        d="M16.12 11.88V22.5M22.42 18H10M21.47 23H10.53C9.69 22.99 9 22.5 9 21.89v-7.8c0-.6.69-1.09 1.53-1.09h10.94c.84.01 1.53.5 1.53 1.11v7.8c0 .6-.69 1.09-1.53 1.09Z">
+                                    </path>
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m16.67 12.63 2.68 2.73M15.55 12.63l-2.68 2.73"></path>
+                                    <path stroke="currentColor" stroke-miterlimit="10" stroke-width="2"
+                                        d="M17.69 12.63h-1.61v-1.68c0-1.08.88-1.95 1.95-1.95h1.68v1.61c0 1.12-.91 2.02-2.02 2.02ZM14.31 12.63h1.61v-1.68c0-1.08-.88-1.95-1.95-1.95h-1.68v1.61c0 1.12.91 2.02 2.02 2.02Z">
+                                    </path>
+                                </svg>
+                                <p class="sc-fpSrms woOjJ">Buy Gift Card</p>
+                            </a></li>
+                        <li class="sc-epPVmt boPIDw">
+                            <div class="MixtilesMenuItem" data-testid="add-promo-menu-item"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"
+                                    style="width: 32px; height: 32px; color: rgb(43, 5, 20);">
+                                    <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" clip-path="url(#PercentageMark_svg__a)">
+                                        <path
+                                            d="M22 10 10 22.17M20 22.18a1.99 1.99 0 1 0 0-3.98 1.99 1.99 0 0 0 0 3.98M12 14.13a1.99 1.99 0 1 0 0-3.98 1.99 1.99 0 0 0 0 3.98">
+                                        </path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="PercentageMark_svg__a">
+                                            <path fill="#fff" d="M9 9h14v14.18H9z"></path>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p class="sc-fpSrms woOjJ">Promo Codes</p>
+                            </div>
+                        </li>
+                        <li class="sc-epPVmt boPIDw"><a class="MixtilesMenuItem" data-testid="my-orders-menu-item"
+                                data-discover="true" href="#" target="_self"
+                                style="text-decoration: none; color: unset;"><svg xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 32 32"
+                                    style="width: 32px; height: 32px; color: rgb(43, 5, 20);">
+                                    <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" clip-path="url(#History_svg__a)">
+                                        <path
+                                            d="M16.01 16v-3M16.01 16l2 2M9.74 12.9A6.99 6.99 0 0 1 16.02 9c3.87 0 7 3.13 7 7s-3.13 7-7 7c-3.53 0-6.44-2.61-6.93-6M9.51 13.16 9 10.21M12.49 12.78l-2.95.52">
+                                        </path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="History_svg__a">
+                                            <path fill="#fff" d="M8 8h16.01v16H8z"></path>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p class="sc-fpSrms woOjJ">My Orders</p>
+                            </a></li>
+                        <li class="sc-epPVmt boPIDw">
+                            <div class="MixtilesMenuItem" data-testid="help-center-menu-item"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"
+                                    style="width: 32px; height: 32px; color: rgb(43, 5, 20);">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 13c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4.78-4 4.78M16 17.78v2.04"></path>
+                                    <circle cx="16.003" cy="22.584" r="0.984" fill="currentColor"></circle>
+                                </svg>
+                                <p class="sc-fpSrms woOjJ">Help Center</p>
+                            </div>
+                        </li>
+                        <li class="sc-epPVmt boPIDw">
+                            <div class="MixtilesMenuItem" data-testid="chat-menu-item"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"
+                                    style="width: 32px; height: 32px; color: rgb(43, 5, 20);">
+                                    <path fill="currentColor"
+                                        d="M16 19.55h.9a.9.9 0 0 0-.9-.9zm0 3.6h-.9a.9.9 0 0 0 1.394.752zm1.27-.817-.485-.759zm6.338-4.845-.685-.583-.032.04zM7.9 13.7a4.95 4.95 0 0 1 4.95-4.95v-1.8A6.75 6.75 0 0 0 6.1 13.7zm4.95 4.95A4.95 4.95 0 0 1 7.9 13.7H6.1a6.75 6.75 0 0 0 6.75 6.75zm3.15 0h-3.15v1.8H16zm.9 4.5v-3.6h-1.8v3.6zm-.115-1.576c-.462.294-.898.573-1.28.824l.99 1.504c.369-.243.794-.514 1.258-.81zm6.106-4.63c-.5.66-1.435 1.451-2.59 2.288-1.136.823-2.405 1.633-3.516 2.342l.968 1.517c1.104-.704 2.418-1.542 3.604-2.402 1.168-.845 2.295-1.769 2.969-2.657zM24.1 13.7c0 1.223-.443 2.34-1.177 3.205l1.37 1.166a6.73 6.73 0 0 0 1.607-4.37zm-4.95-4.95a4.95 4.95 0 0 1 4.95 4.95h1.8a6.75 6.75 0 0 0-6.75-6.75zm-6.3 0h6.3v-1.8h-6.3z">
+                                    </path>
+                                    <rect width="2.25" height="2.25" x="11.185" y="12.575" fill="currentColor"
+                                        rx="1.125"></rect>
+                                    <rect width="2.25" height="2.25" x="14.785" y="12.575" fill="currentColor"
+                                        rx="1.125"></rect>
+                                    <rect width="2.25" height="2.25" x="18.385" y="12.575" fill="currentColor"
+                                        rx="1.125"></rect>
+                                </svg>
+                                <p class="sc-fpSrms woOjJ">Chat with Us</p>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <hr class="MuiDivider-root MuiDivider-fullWidth sc-euGpHm kyxmdp css-39bbo6">
+            <div class="">
+                <div class="sc-bhjgvs lejcDI">
+                    <a class="sc-czgmHJ eUuvkJ" data-discover="true" href="#">Corporate
+                        Gifting</a>
+                    <a class="sc-czgmHJ eUuvkJ" data-discover="true" href="#">Privacy Policy</a>
+                    <a class="sc-czgmHJ eUuvkJ">Privacy Settings</a>
+                    <a class="sc-czgmHJ eUuvkJ" data-discover="true" href="#">Terms of Use</a>
+                    <div data-acsb-custom-trigger="true" tabindex="0" role="button">Accessibility</div>
+                </div>
+
+                <div class="sc-dJDBYC ilSkDm">
+                    <div id="language_selector_wrapper">
+                        <div class="trigger">
+                            <div class="arrow"></div>
+                            <span>English</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- scroll header  -->
+
+    <div class="sc-joGeXq QZoRt">
+        <div class="sc-cOpIlM bcyeEB">
+            <div class="sc-coWpsv hLtXMi" id="hamburgerBtn2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
+                    style="width: 32px; height: 32px; color: rgb(43, 5, 20);">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M23 21H9M23 16H9M23 11H9"></path>
+                </svg>
+            </div>
+            <a class="sc-czgmHJ eUuvkJ" data-discover="true" href="./index.html">
+                <div class="sc-cBYhjr bJaEAO"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 98 12"
+                        class="sc-jzjKHc eTTbPC">
+                        <path fill="currentColor"
+                            d="M14.71.304v11.408h-2.637V4.794h-.351l-2.893 6.918H6.848l-2.86-6.918h-.384v6.918H1V.304h3.563L7.631 8.1h.432L11.13.304zM22.73.304v11.408h-2.748V.304zM35.497 11.712 33.212 7.75h-.463l-2.253 3.962h-3.42l3.692-5.784L27.204.304h3.404l2.125 3.77h.495L35.37.305h3.403L35.21 5.928l3.69 5.784zM51.492.304v2.365h-3.244v9.043h-2.765V2.67H42.24V.304zM58.442.304v11.408h-2.748V.304zM66.879.304v9.028h4.937v2.38h-7.702V.305zM84.742.304v2.365h-5.736v2.109h4.314v2.397h-4.314v2.157h5.736v2.38h-8.516V.305zM88.72 11.089V8.324c.912.64 2.461 1.246 3.883 1.246 1.151 0 1.758-.367 1.758-1.102 0-.895-.927-.975-2.653-1.422-2.189-.592-3.26-1.63-3.26-3.404C88.449 1.39 90.159 0 92.892 0c1.246 0 2.572.336 3.611.895v2.589c-.91-.528-2.3-1.023-3.563-1.023-1.103 0-1.678.32-1.678 1.023s.895.959 2.668 1.406c2.221.607 3.26 1.55 3.26 3.339 0 2.317-1.79 3.771-4.634 3.771-1.342 0-2.748-.335-3.834-.91">
+                        </path>
+                    </svg></div>
+            </a>
+        </div>
+        <button class="gPpRim">
+            Shop Now
+        </button>
+    </div>
+
+    <main class="sc-bmvkBe hEuEJV">
+        <div class="d-flex flex-column w-100 align-items-center">
+
+            <!-- hero-section  -->
+
+            <section class="hero-section">
+                <div class="sc-hULjhL fjlEbF">
+                    <video id="title-video-preloader" class="homepage-video2"
+                        poster="https://d2pkj4iuzqk8im.cloudfront.net/videos/homepage/c_scale,w_900--so_0--q_75--f_jpg--v1--assets--homepage--2023--videos--title-1-desktop.jpg"
+                        playsinline preload="auto" fetchpriority="high" autoplay muted loop>
+                        <source
+                            src="./assets/images/c_scale,w_2000--q_auto_best--vc_h264_high_auto--v1--assets--homepage--2023--videos--title-1-desktop.mp4"
+                            type="video/mp4">
+                    </video>
+
+                </div>
+                <div class="sc-eDngPS evGmDs">
+                    <div class="sc-NySBO jLndOy">
+                        <h1 class="sc-cHBhsk fOfobA">Photo Walls Reinvented</h1>
+                        <a href="./photos.html">
+                            <button class="sc-eywMuZ cagdcA">
+
+                                Shop Now
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="sc-hkcRYQ eOjzTP">
+                <div class="sc-tSpkn YQvKn d-flex d-md-none">
+                    <div class="sc-eFHqgm HIkzf"></div>As Seen On<div class="sc-eFHqgm HIkzf"></div>
+                </div>
+                <ul class="sc-gmTIGM dmhWHr">
+                    <li class="sc-dltRmP dwMtFV"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 62 61">
+                            <path fill="#2B0514"
+                                d="M13.944 34.394v1.624h1.932v5.338h1.854v-5.338h1.922v-1.624zM24.585 39.683a1.8 1.8 0 0 1-.755.151 1.9 1.9 0 0 1-.765-.15q-.339-.153-.576-.415a1.9 1.9 0 0 1-.37-.618 2.2 2.2 0 0 1-.132-.772q0-.416.132-.772a1.9 1.9 0 0 1 .37-.617q.238-.263.576-.415.34-.15.765-.151c.282 0 .53.051.755.151q.337.151.576.415.238.263.37.617.132.357.132.772c0 .276-.044.536-.132.772a1.9 1.9 0 0 1-.37.618 1.7 1.7 0 0 1-.577.414m1.902-4.396a3.6 3.6 0 0 0-1.18-.741 4.1 4.1 0 0 0-1.477-.266c-.526 0-1.031.09-1.481.266s-.847.426-1.18.74a3.4 3.4 0 0 0-.784 1.139c-.187.44-.282.93-.282 1.455 0 .526.095 1.015.282 1.455.188.44.451.823.784 1.139.333.315.73.564 1.18.74s.949.266 1.48.266a4 4 0 0 0 1.477-.266 3.6 3.6 0 0 0 1.18-.74c.33-.316.592-.699.78-1.139.187-.44.281-.93.281-1.455 0-.526-.095-1.015-.282-1.455a3.4 3.4 0 0 0-.778-1.138M33.434 37.87c0 .248-.043.489-.127.714a1.8 1.8 0 0 1-.365.591 1.75 1.75 0 0 1-.587.404q-.349.15-.796.151h-1.078v-3.713h1.088c.31 0 .585.048.817.142q.349.14.581.393.232.252.349.586.116.335.117.73m.82-2.547a3.5 3.5 0 0 0-1.19-.69 4.6 4.6 0 0 0-1.509-.24h-2.927v6.963h2.937c.539 0 1.043-.08 1.499-.24s.857-.392 1.19-.694.595-.671.782-1.097c.187-.427.282-.916.282-1.456a3.6 3.6 0 0 0-.282-1.455 3.2 3.2 0 0 0-.783-1.093M40.012 38.74h-1.65l.825-2.434zm.317-4.346h-2.284l-2.603 6.91-.02.052h2.098l.341-.991h2.664l.342.991h2.097l-2.623-6.938-.01-.024zM47.194 34.394l-1.457 2.502-1.476-2.502h-2.096l2.647 4.158v2.804h1.853v-2.804l2.635-4.158zM18.49 31.257c.453-6.738 6.084-12.082 12.94-12.082 6.858 0 12.532 5.385 12.946 12.16q.025.396.025.8h4.539q0-.361-.014-.718C48.55 22.087 40.86 14.64 31.43 14.64A17.46 17.46 0 0 0 13.92 32.135h4.54q0-.444.03-.878">
+                            </path>
+                            <path fill="#2B0514"
+                                d="M24.344 31.309a7.14 7.14 0 0 1 7.086-6.302c3.653 0 6.707 2.788 7.092 6.356q.041.38.041.77h4.54q0-.373-.023-.741c-.383-6.096-5.452-10.92-11.651-10.92s-11.252 4.81-11.648 10.893q-.025.38-.025.769h4.54q0-.42.047-.825">
+                            </path>
+                            <path fill="#2B0514"
+                                d="M31.43 26.303a5.836 5.836 0 0 0-5.835 5.832h11.673q0-.423-.06-.83a5.834 5.834 0 0 0-5.777-5.002">
+                            </path>
+                        </svg></li>
+                    <li class="sc-dltRmP dwMtFV"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 62 61">
+                            <path fill="#2B0514"
+                                d="M30.993 13.716c-9.324 0-16.814 7.512-16.814 16.832s7.49 16.832 16.814 16.832S47.8 39.868 47.8 30.548s-7.484-16.832-16.807-16.832">
+                            </path>
+                            <path fill="#fff"
+                                d="M19.968 25.27a5.26 5.26 0 0 0-5.272 5.278 5.26 5.26 0 0 0 5.272 5.277c1.796 0 2.497-1.268 2.497-1.268v1.154h2.774v-5.163a5.26 5.26 0 0 0-5.271-5.277m0 2.76a2.51 2.51 0 0 1 2.512 2.518 2.51 2.51 0 0 1-2.512 2.518 2.51 2.51 0 0 1-2.512-2.518 2.51 2.51 0 0 1 2.512-2.518M25.91 21.637v8.911a5.265 5.265 0 0 0 5.273 5.28 5.26 5.26 0 0 0 5.267-5.28 5.26 5.26 0 0 0-5.267-5.279c-1.796 0-2.5 1.271-2.5 1.271v-4.903zm5.273 6.393a2.51 2.51 0 0 1 2.513 2.518 2.51 2.51 0 0 1-2.513 2.519 2.51 2.51 0 0 1-2.512-2.519 2.51 2.51 0 0 1 2.512-2.518M42.174 25.27a5.26 5.26 0 0 0-5.272 5.278 5.26 5.26 0 0 0 5.272 5.277 5.26 5.26 0 0 0 5.145-4.114h-2.916a2.51 2.51 0 0 1-2.23 1.355 2.51 2.51 0 0 1-2.512-2.518 2.51 2.51 0 0 1 2.513-2.518 2.51 2.51 0 0 1 2.235 1.361h2.91a5.26 5.26 0 0 0-5.145-4.12">
+                            </path>
+                        </svg></li>
+                    <li class="sc-dltRmP dwMtFV"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 62 61">
+                            <path fill="#2B0514"
+                                d="M38.348 25.703c0 6.113-1.103 12.964-7.331 12.964-5.847 0-7.035-6.851-6.993-12.76.043-6.44.975-13.414 7.034-13.414 6.018 0 7.29 6.729 7.29 13.21m-7.331 13.458c7.5 0 13.136-6.318 13.136-13.58C44.153 18.359 38.602 12 31.1 12c-7.205 0-12.883 6.524-12.883 13.785.001 7.098 5.468 13.376 12.799 13.376M30.574 43.066c0 .607-.492.954-.953.954-.468 0-.952-.347-.952-.954s.484-.948.952-.948c.46 0 .953.341.953.948m.389 0c0-.788-.666-1.273-1.342-1.273-.675 0-1.34.485-1.34 1.273 0 .796.665 1.276 1.34 1.276.676 0 1.342-.48 1.342-1.276">
+                            </path>
+                            <path fill="#2B0514" stroke="#2B0514" stroke-width="0.081"
+                                d="M30.574 43.066c0 .607-.492.954-.953.954-.468 0-.952-.347-.952-.954s.484-.948.952-.948c.46 0 .953.341.953.948Zm.389 0c0-.788-.666-1.273-1.342-1.273-.675 0-1.34.485-1.34 1.273 0 .796.665 1.276 1.34 1.276.676 0 1.342-.48 1.342-1.276Z">
+                            </path>
+                            <path fill="#2B0514"
+                                d="M33.952 42.532c0 .258-.224.374-.45.374h-.313v-.746h.313c.226-.001.45.118.45.372m.38 0c0-.465-.405-.688-.763-.688h-.76v2.452h.38V43.22h.38c.358 0 .763-.222.763-.688">
+                            </path>
+                            <path fill="#2B0514" stroke="#2B0514" stroke-width="0.081"
+                                d="M33.952 42.532c0 .258-.224.374-.45.374h-.313v-.746h.313c.226-.001.45.118.45.372Zm.38 0c0-.465-.405-.688-.763-.688h-.76v2.452h.38V43.22h.38c.358 0 .763-.222.763-.688Z">
+                            </path>
+                            <path fill="#2B0514"
+                                d="M37.273 42.532c0 .258-.222.374-.448.374h-.353v-.746h.353c.226-.001.448.118.448.372m.802 1.764-.865-1.135c.245-.095.445-.303.445-.629 0-.465-.404-.688-.761-.688h-.803v2.452h.381V43.22h.358l.797 1.076z">
+                            </path>
+                            <path fill="#2B0514" stroke="#2B0514" stroke-width="0.081"
+                                d="M37.273 42.532c0 .258-.222.374-.448.374h-.353v-.746h.353c.226-.001.448.118.448.372Zm.802 1.764-.865-1.135c.245-.095.445-.303.445-.629 0-.465-.404-.688-.761-.688h-.803v2.452h.381V43.22h.358l.797 1.076z">
+                            </path>
+                            <path fill="#2B0514"
+                                d="M41.05 43.366h-.726l.194-.465c.052-.128.095-.239.164-.434h.008c.067.192.111.303.167.438zm.792.93-1.08-2.487h-.14l-1.079 2.486h.377l.274-.634h.985l.274.634z">
+                            </path>
+                            <path fill="#2B0514" stroke="#2B0514" stroke-width="0.081"
+                                d="M41.05 43.366h-.726l.194-.465c.052-.128.095-.239.164-.434h.008c.067.192.111.303.167.438zm.792.93-1.08-2.487h-.14l-1.079 2.486h.377l.274-.634h.985l.274.634z">
+                            </path>
+                            <path fill="#2B0514"
+                                d="M45.298 44.296v-1.073h-1.306v1.073h-.384v-2.452h.384v1.062h1.306v-1.062h.385v2.452z">
+                            </path>
+                            <path fill="#2B0514" stroke="#2B0514" stroke-width="0.081"
+                                d="M45.298 44.296v-1.073h-1.306v1.073h-.384v-2.452h.384v1.062h1.306v-1.062h.385v2.452z">
+                            </path>
+                            <path fill="#2B0514" d="M17.89 42.165v2.146h-.384v-2.146h-.814v-.322h2.011v.322z"></path>
+                            <path fill="#2B0514" stroke="#2B0514" stroke-width="0.081"
+                                d="M17.89 42.165v2.146h-.384v-2.146h-.814v-.322h2.011v.322z"></path>
+                            <path fill="#2B0514"
+                                d="M22.1 44.311v-1.078h-1.305v1.078h-.386v-2.468h.386v1.069H22.1v-1.07h.384v2.47z">
+                            </path>
+                            <path fill="#2B0514" stroke="#2B0514" stroke-width="0.081"
+                                d="M22.1 44.311v-1.078h-1.305v1.078h-.386v-2.468h.386v1.069H22.1v-1.07h.384v2.47z">
+                            </path>
+                            <path fill="#2B0514"
+                                d="M24.43 44.311v-2.468h1.366v.322h-.981v.747h.822v.32h-.822v.758h1.12v.321z"></path>
+                            <path fill="#2B0514" stroke="#2B0514" stroke-width="0.081"
+                                d="M24.43 44.311v-2.468h1.366v.322h-.981v.747h.822v.32h-.822v.758h1.12v.321z"></path>
+                            <path fill="#2B0514"
+                                d="m19.184 49.495-.076-.817c-.028-.299-.05-.572-.067-.86h-.008c-.118.244-.25.507-.39.77l-.483.924h-.143l-.489-.916c-.15-.286-.29-.553-.389-.77h-.008c-.02.294-.044.592-.067.858l-.07.809h-.342l.218-2.469h.238l.604 1.133q.221.416.389.77h.008c.103-.233.23-.487.38-.773l.596-1.13h.238l.227 2.469h-.366">
+                            </path>
+                            <path fill="#2B0514" stroke="#2B0514" stroke-width="0.081"
+                                d="m19.184 49.495-.076-.817c-.028-.299-.05-.572-.067-.86h-.008c-.118.244-.25.507-.39.77l-.483.924h-.143l-.489-.916c-.15-.286-.29-.553-.389-.77h-.008c-.02.294-.044.592-.067.858l-.07.809h-.342l.218-2.469h.238l.604 1.133q.221.416.389.77h.008c.103-.233.23-.487.38-.773l.596-1.13h.238l.227 2.469h-.366z">
+                            </path>
+                            <path fill="#2B0514"
+                                d="M22.875 48.56h-.727l.196-.468c.05-.128.095-.24.162-.438h.008c.067.193.112.306.168.441zm.79.935-1.08-2.504h-.14l-1.08 2.504h.378l.274-.638h.985l.274.638z">
+                            </path>
+                            <path fill="#2B0514" stroke="#2B0514" stroke-width="0.081"
+                                d="M22.875 48.56h-.727l.196-.468c.05-.128.095-.24.162-.438h.008c.067.193.112.306.168.441zm.79.935-1.08-2.504h-.14l-1.08 2.504h.378l.274-.638h.985l.274.638z">
+                            </path>
+                            <path fill="#2B0514"
+                                d="M26.728 49.542c-.683 0-1.39-.444-1.39-1.281 0-.855.735-1.284 1.365-1.284.35 0 .63.083.817.197l-.072.326a1.35 1.35 0 0 0-.702-.197c-.496 0-1.02.317-1.02.964 0 .639.508.951 1.023.951.235 0 .417-.046.536-.128v-.513h-.58v-.302h.948v1.002c-.243.188-.548.265-.925.265">
+                            </path>
+                            <path fill="#2B0514" stroke="#2B0514" stroke-width="0.081"
+                                d="M26.728 49.542c-.683 0-1.39-.444-1.39-1.281 0-.855.735-1.284 1.365-1.284.35 0 .63.083.817.197l-.072.326a1.35 1.35 0 0 0-.702-.197c-.496 0-1.02.317-1.02.964 0 .639.508.951 1.023.951.235 0 .417-.046.536-.128v-.513h-.58v-.302h.948v1.002c-.243.188-.548.265-.925.265Z">
+                            </path>
+                            <path fill="#2B0514"
+                                d="M31.03 48.56h-.727l.194-.468c.05-.128.095-.24.162-.438h.008c.067.193.112.306.166.441zm.79.935-1.079-2.504h-.14l-1.079 2.504h.377l.274-.638h.985l.274.638z">
+                            </path>
+                            <path fill="#2B0514" stroke="#2B0514" stroke-width="0.081"
+                                d="M31.03 48.56h-.727l.194-.468c.05-.128.095-.24.162-.438h.008c.067.193.112.306.166.441zm.79.935-1.079-2.504h-.14l-1.079 2.504h.377l.274-.638h.985l.274.638z">
+                            </path>
+                            <path fill="#2B0514"
+                                d="M33.578 49.496v-.09l.833-1.426c.132-.221.263-.445.386-.634l-.003-.005h-1.152v-.313h1.667v.089l-.837 1.424c-.12.201-.262.441-.386.638l.006.003h1.282v.313z">
+                            </path>
+                            <path fill="#2B0514" stroke="#2B0514" stroke-width="0.081"
+                                d="M33.578 49.496v-.09l.833-1.426c.132-.221.263-.445.386-.634l-.003-.005h-1.152v-.313h1.667v.089l-.837 1.424c-.12.201-.262.441-.386.638l.006.003h1.282v.313z">
+                            </path>
+                            <path fill="#2B0514" d="M37.737 47.028h-.385v2.469h.385z"></path>
+                            <path fill="#2B0514" stroke="#2B0514" stroke-width="0.081"
+                                d="M37.737 47.028h-.385v2.469h.385z"></path>
+                            <path fill="#2B0514"
+                                d="m42.028 49.549-1.105-1.161c-.23-.24-.476-.507-.666-.736l-.008.005c.008.224.008.398.008.58v1.256h-.385v-2.469h.265l.965 1.033c.218.235.46.494.655.73l.008-.002c-.008-.191-.008-.396-.008-.577v-1.184h.385v2.523h-.114">
+                            </path>
+                            <path fill="#2B0514" stroke="#2B0514" stroke-width="0.081"
+                                d="m42.028 49.549-1.105-1.161c-.23-.24-.476-.507-.666-.736l-.008.005c.008.224.008.398.008.58v1.256h-.385v-2.469h.265l.965 1.033c.218.235.46.494.655.73l.008-.002c-.008-.191-.008-.396-.008-.577v-1.184h.385v2.523h-.114z">
+                            </path>
+                            <path fill="#2B0514"
+                                d="M44.218 49.496v-2.468h1.365v.32h-.981v.748h.822v.32h-.822v.759h1.119v.32z"></path>
+                            <path fill="#2B0514" stroke="#2B0514" stroke-width="0.081"
+                                d="M44.218 49.496v-2.468h1.365v.32h-.981v.748h.822v.32h-.822v.759h1.119v.32z"></path>
+                        </svg></li>
+                    <li class="sc-dltRmP dwMtFV"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 62 61">
+                            <path fill="#2B0514" fill-rule="evenodd"
+                                d="M31.278 17.518h.946s.506 0 .575.239c-.08.064-.187.117-.307.175-.445.217-1.052.512-.945 1.793l1.592 10.688 4.973-11.842c1.018-2.644-1.118-4.852-3.012-4.92a4 4 0 0 0-.27-.011c-1.7 0-3.648 1.235-3.552 3.878m-7.55 1.086c-1.085-2.952 1.353-4.885 2.976-4.918 1.863-.206 4.199 1.219 3.792 4.306l-1.76 12.423zm-5.011 6.246c-2.503-1.665-1.998-4.514-.61-5.77 1.964-1.66 4.74-1.09 5.754 1.528L28.704 31.7zm14.49 6.819 4.705-10.96c.77-1.878 2.098-2.536 3.34-2.536 1.05 0 2.041.469 2.581 1.076 1.289 1.29 1.66 3.9-.642 5.532zm8.867-5.328-9.376 6.549h11.544c2.369 0 3.89-2.442 3.214-4.684-.453-1.408-1.794-2.514-3.35-2.515-.655 0-1.35.197-2.032.65M29.212 32.89H17.838c-2.37 0-4.232-2.172-3.486-4.817.88-2.31 3.316-3.124 5.482-1.732z"
+                                clip-rule="evenodd"></path>
+                            <path fill="#2B0514"
+                                d="M30.435 41.85h2.11c.485.03 1.344.454 1.344 1.457 0 1.049-.892 1.472-1.375 1.52h-2.08zm-.032-4.67h1.736c.594.032 1.296.47 1.296 1.285 0 .799-.53 1.331-1.218 1.426h-1.814zm-2.375-1.944v11.532h5.596c1.328 0 2.906-1.33 2.906-3.07 0-1.817-1.187-2.71-1.938-3.07 0 0 1.375-.8 1.314-2.524-.062-2.319-2.205-2.868-2.94-2.868zM19.446 46.769v-6.643l7.252 7.081v-11.97h-2.437v6.472l-7.254-6.941v12zM36.922 40.878c.061 3.646 2.682 6.373 6.05 6.373.799 0 1.64-.151 2.5-.483v-2.35a4.2 4.2 0 0 1-2.183.618c-2.038 0-3.962-1.508-3.882-4.252.137-2.226 1.96-3.762 3.923-3.762a3.86 3.86 0 0 1 2.142.66v-2.287a6.2 6.2 0 0 0-2.352-.468c-3.36 0-6.133 2.834-6.198 5.95">
+                            </path>
+                        </svg></li>
+                    <li class="sc-dltRmP dwMtFV"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 62 61">
+                            <path fill="#2B0514"
+                                d="M36.314 47.524c.169-.669.327-1.305.528-2.103-.882.471-1.65.85-2.386 1.282-1.505.887-3.119 1.065-4.788.697-.55-.121-1.045-.478-1.639-.763-.585.81-1.631.912-2.698.916-.69.003-1.396.01-2.069-.117-1.482-.277-1.982-1.097-1.638-2.527.056-.237.109-.474.178-.77-.548.074-1.07.123-1.581.23-.118.026-.194.247-.29.377-.254.342-.468.727-.775 1.013-.37.348-.878.56-1.225.925-1.139 1.197-2.566.843-4.01.856.382-1.416.737-2.757 1.104-4.097.448-1.644.87-3.295 1.373-4.923.168-.545.548-1.024.865-1.597h-1.97c.247-.936.393-1.791.702-2.584.418-1.068.306-2.12.15-3.194-.17-1.18-.352-2.357-.482-3.541-.027-.25.083-.575.245-.776.443-.555.931-1.078 1.428-1.59.631-.647 1.072-1.358 1.29-2.263a110 110 0 0 1 1.647-6.01c.146-.48.534-.904.867-1.306a34 34 0 0 1 1.709-1.878c.153-.159.4-.313.61-.32 1.005-.033 2.014-.014 3.048-.014l.137.915c.094.009.162.03.171.015.6-.943 1.521-.96 2.519-.947 2.916.04 5.833.015 8.75.015h.777v1.148l.103.183c.876-1.674 2.331-1.354 3.767-1.29v1.236c.721-.374.982-1.4 2.04-1.29.815.085 1.645.017 2.596.017-1.685 3.604-3.327 7.113-4.981 10.646l.64.098c-.075.352-.147.703-.23 1.104.103-.034.173-.035.202-.07.88-1.048 2.044-1.217 3.324-1.092.527.05 1.063.008 1.758.008-.222.28-.344.445-.479.6-1.144 1.306-2.303 2.6-3.426 3.926-.152.18-.213.52-.17.76.3 1.65.639 3.293.956 4.94.027.14-.012.292-.023.484h1.602c-.411 1.208-.255 2.586-1.682 3.21-.71.312-1.014.898-1.195 1.644-.42 1.74-.919 3.463-1.42 5.182-.078.27-.295.54-.52.718-.47.373-1.059.618-1.478 1.035-1.128 1.123-2.504.958-3.935.883zm2.169-33.67c-2.474 0-4.825-.008-7.175.02-.15.001-.38.26-.431.438-.478 1.656-.922 3.32-1.379 4.98-.378 1.379-.76 2.756-1.171 4.253h3.492q1.677 0 2.09-1.623c.009-.034-.026-.078-.066-.187h-2.64c.192-.72.339-1.365.551-1.988.046-.136.328-.263.507-.272.626-.034 1.256.006 1.882-.027.173-.01.434-.144.49-.285.172-.442.266-.916.412-1.454h-2.739c.167-.649.3-1.228.477-1.794.039-.126.236-.284.365-.288.911-.025 1.824-.013 2.827-.013l-.587 7.933c.617 0 1.13-.036 1.637.01.526.048.797-.134 1.011-.622.607-1.373 1.276-2.718 1.921-4.075l.104.018-.272 4.669c.633 0 1.234-.023 1.835.008.39.02.592-.111.76-.473 1.25-2.698 2.527-5.384 3.794-8.074.166-.353.313-.714.504-1.153-.659 0-1.216.028-1.77-.009-.425-.028-.63.13-.799.514-.583 1.308-1.21 2.598-1.82 3.893l-.137-.026.194-4.37c-.336 0-.586.038-.819-.007-.793-.154-1.198.194-1.508.9-.529 1.207-1.158 2.373-1.743 3.555l-.125-.037c.107-1.436.216-2.873.332-4.41zm-14.082 4.523.139.018c.152 1.513.327 3.024.441 4.54.038.502.224.62.7.62 1.827 0 1.831.017 2.31-1.723.725-2.637 1.447-5.275 2.179-7.953h-2.09l-1.297 4.722h-.1l-.502-4.746c-.734 0-1.406.027-2.073-.009-.449-.024-.608.147-.716.566-.444 1.713-.932 3.413-1.402 5.119-.362 1.316-.72 2.634-1.097 4.014.494 0 .922-.037 1.34.01.574.064.822-.152.96-.713.365-1.497.8-2.977 1.208-4.463zm8.161 15.829c.33-1.179.633-2.334.988-3.472.058-.184.333-.408.527-.428.992-.104 1.17.121.914 1.084-.248.93-.512 1.854-.781 2.827h2.527c.331-1.206.7-2.387.96-3.593.08-.377-.134-.815-.209-1.206.25-.276.679-.566.839-.962a12.6 12.6 0 0 0 .735-2.539c.164-.945-.25-1.338-1.241-1.346-1.458-.01-2.918.012-4.376-.01-.433-.008-.618.123-.732.555-.692 2.629-1.419 5.249-2.134 7.873-.108.393-.209.788-.322 1.217zm-.879-8.253c-.01-.788-.43-1.19-1.015-1.453-1.047-.471-2.123-.446-3.199-.114-1.048.323-1.936.868-2.253 1.987a338 338 0 0 0-1.674 6.137c-.243.926.084 1.541.978 1.912.942.391 1.918.387 2.897.153 1.365-.328 2.3-1.06 2.646-2.5.449-1.869 1.004-3.714 1.508-5.569.058-.213.09-.431.113-.554zm-1.67 8.934c-.18 0-.359-.007-.538 0-1.58.062-2.901.957-3.278 2.284a323 323 0 0 0-1.64 6.01c-.242.92.072 1.627.98 1.903.729.22 1.538.337 2.294.283 1.804-.129 2.813-1.046 3.285-2.788.458-1.683.904-3.368 1.372-5.046.447-1.6-.188-2.513-1.87-2.644-.2-.016-.402-.002-.604-.002zm4.227 6.85h-.877q-1.463.004-1.836 1.362c-.283 1.034.063 1.699 1.105 2.062 1.403.49 2.755.244 3.997-.457 1.977-1.115 2.265-3.358.695-4.986-.403-.417-.841-.801-1.241-1.22-.338-.353-.597-.792-.275-1.247.162-.23.526-.442.8-.444.389-.002.527.352.472.733-.038.26-.08.52-.132.859h1.018q1.306 0 1.647-1.247c.296-1.088-.09-1.857-1.188-2.13-1.377-.342-2.72-.202-3.924.61-1.565 1.051-1.838 2.628-.724 4.126.25.336.577.619.834.952.364.47.778.93 1.003 1.465.101.24-.117.746-.351.948-.209.18-.702.228-.952.103-.176-.088-.18-.56-.21-.866-.016-.164.07-.338.137-.622zm3.313-7.542q2.344.19 2.88-1.924c.065-.256.145-.508.216-.762q.194-.692.386-1.384l.12.035c.272 1.354.546 2.71.813 4.043h2.57c-.238-1.168-.436-2.3-.706-3.413-.303-1.248-.434-2.422.8-3.293.125-.088.212-.228.313-.345l2.174-2.544c-.31-.02-.486-.02-.657-.045-1.303-.192-2.315.152-3.037 1.346-.404.669-1.034 1.203-1.561 1.797l-.138-.092c.259-.99.516-1.983.793-3.047-.662 0-1.2.036-1.734-.01-.476-.042-.657.144-.771.583-.473 1.818-.98 3.628-1.476 5.44-.326 1.193-.65 2.385-.987 3.615zm-17.31 7.752c.596 0 1.176.01 1.755-.001 1.571-.032 2.418-.61 2.849-2.026.31-1.014.557-2.046.793-3.078.199-.873-.119-1.459-.991-1.526-1.556-.122-3.123-.107-4.687-.112-.12 0-.3.282-.352.46-.403 1.402-.778 2.81-1.165 4.217-.448 1.636-.899 3.27-1.373 4.995.695 0 1.294-.016 1.892.007.354.013.507-.11.592-.46.195-.815.446-1.617.687-2.474zm-1.8-7.71c.622 0 1.179-.043 1.724.013.548.056.754-.192.844-.663.406-2.112 1.166-4.07 2.56-5.75.113-.136.205-.29.305-.436l1.915-2.835c-.538 0-.94.038-1.333-.01-.59-.072-.941.15-1.247.653-.546.898-1.174 1.749-1.856 2.75-.128-1.037-.223-1.904-.353-2.767-.032-.212-.171-.57-.288-.581-.629-.058-1.266-.028-1.937-.028l.49 3.717c.145 1.086.355 2.155-.056 3.249-.316.842-.502 1.733-.77 2.689zm23.182 2.7-2.157 7.971c.61 0 1.127-.047 1.633.012.57.065.78-.176.913-.685.634-2.414 1.3-4.821 1.968-7.29.41 0 .812.02 1.21-.01.149-.01.378-.108.414-.217.164-.486.273-.992.415-1.538-1.77 0-3.452-.007-5.132.013-.148.001-.38.153-.426.285-.157.451-.249.926-.383 1.46h1.547z">
+                            </path>
+                            <path fill="#FBF6F6"
+                                d="m38.483 13.854-.333 4.41.125.038c.587-1.183 1.215-2.349 1.744-3.555.31-.706.715-1.055 1.508-.9.233.045.483.006.818.006l-.194 4.37.138.027c.61-1.296 1.237-2.586 1.82-3.894.17-.383.374-.542.8-.514.553.036 1.11.01 1.768.01-.19.438-.337.799-.503 1.152-1.266 2.69-2.544 5.377-3.795 8.074-.168.362-.37.493-.76.473-.599-.03-1.202-.008-1.834-.008l.272-4.669-.104-.018c-.645 1.355-1.315 2.702-1.921 4.075-.216.488-.486.67-1.011.622-.507-.046-1.02-.01-1.637-.01l.587-7.933c-1.002 0-1.915-.012-2.827.013-.128.004-.325.163-.365.288-.177.566-.309 1.145-.477 1.794h2.738c-.145.54-.238 1.012-.412 1.454-.055.141-.316.276-.49.285-.626.035-1.256-.006-1.882.027-.179.01-.46.136-.506.272-.213.622-.36 1.266-.552 1.988h2.64c.042.11.077.153.067.187q-.413 1.623-2.09 1.623h-3.492c.412-1.497.793-2.874 1.17-4.253.457-1.66.903-3.324 1.38-4.98.05-.178.28-.435.43-.438 2.35-.028 4.701-.02 7.176-.02zM24.4 18.377c-.407 1.487-.842 2.968-1.208 4.464-.138.56-.384.776-.96.712-.418-.046-.846-.01-1.34-.01.377-1.379.735-2.698 1.098-4.014.47-1.706.958-3.405 1.401-5.118.109-.42.268-.59.716-.566.668.036 1.34.01 2.073.01l.503 4.745h.1l1.297-4.722h2.09c-.734 2.676-1.455 5.314-2.18 7.953-.48 1.74-.482 1.724-2.31 1.722-.476 0-.661-.117-.7-.62-.114-1.515-.288-3.027-.44-4.54zM32.563 34.205h-2.305c.114-.43.216-.823.322-1.218.715-2.624 1.442-5.243 2.134-7.873.113-.431.298-.563.733-.555 1.457.023 2.915 0 4.375.01.992.007 1.404.402 1.241 1.347a12.7 12.7 0 0 1-.735 2.539c-.16.397-.588.687-.839.962.076.391.291.83.209 1.206-.26 1.206-.629 2.387-.96 3.592h-2.527c.27-.972.535-1.896.781-2.826.256-.963.078-1.188-.914-1.084-.194.02-.469.242-.527.427-.355 1.14-.66 2.294-.988 3.473m1.574-5.642c.425 0 .749.056 1.04-.016.296-.073.674-.207.81-.434.218-.364.326-.822.358-1.25.015-.192-.261-.573-.412-.577-.42-.01-1.007-.329-1.243.23-.258.618-.359 1.3-.553 2.048zM31.684 25.952c-.024.121-.055.341-.113.554-.505 1.855-1.06 3.7-1.508 5.569-.346 1.44-1.282 2.172-2.647 2.5-.978.234-1.953.238-2.897-.153-.892-.37-1.22-.986-.977-1.911q.809-3.076 1.673-6.138c.318-1.12 1.205-1.664 2.254-1.987 1.074-.332 2.151-.359 3.198.114.585.264 1.005.665 1.016 1.453zm-4.845 6.825c.428-.027.712-.397.85-.9q.688-2.484 1.35-4.974c.145-.543-.271-.96-.788-.74-.311.133-.665.446-.76.75-.518 1.684-.971 3.39-1.426 5.091-.134.498.117.778.772.772zM30.014 34.887c.201 0 .403-.014.604.002 1.682.13 2.317 1.044 1.87 2.644-.468 1.678-.915 3.363-1.372 5.045-.474 1.743-1.48 2.66-3.285 2.79-.756.054-1.565-.063-2.294-.284-.907-.275-1.222-.983-.98-1.902.53-2.009 1.072-4.013 1.64-6.011.377-1.325 1.698-2.22 3.278-2.284.18-.007.358 0 .537 0zm-2.094 8.588c.186-.184.622-.416.723-.747.53-1.73.988-3.48 1.438-5.233.125-.487-.284-.852-.75-.664-.3.121-.674.382-.76.658-.53 1.728-1 3.474-1.461 5.22-.119.45.126.715.81.766M34.24 41.737c-.067.283-.154.458-.137.622.031.305.035.778.21.865.25.126.743.078.952-.102.234-.203.452-.709.351-.948-.224-.535-.64-.995-1.003-1.466-.257-.332-.584-.614-.834-.952-1.114-1.497-.84-3.075.724-4.126 1.205-.81 2.547-.95 3.924-.609 1.098.273 1.484 1.042 1.188 2.13q-.34 1.246-1.647 1.246h-1.017c.052-.34.094-.599.132-.858.055-.383-.084-.736-.473-.733-.275.001-.638.214-.8.443-.322.456-.063.894.275 1.248.4.42.839.802 1.241 1.22 1.571 1.628 1.282 3.87-.694 4.986-1.243.702-2.595.948-3.998.457-1.042-.365-1.387-1.03-1.105-2.062q.372-1.359 1.836-1.363h.877zM37.552 34.195c.337-1.23.661-2.422.987-3.615.495-1.812 1.003-3.622 1.476-5.44.114-.439.293-.625.771-.584.532.047 1.072.01 1.734.01l-.793 3.048.137.092c.528-.594 1.16-1.128 1.562-1.797.722-1.194 1.733-1.538 3.037-1.346.171.025.346.025.657.045l-2.174 2.544c-.101.119-.189.258-.312.345-1.234.871-1.103 2.044-.801 3.293.27 1.113.467 2.244.706 3.413h-2.57l-.813-4.043-.12-.035-.386 1.384c-.071.254-.15.506-.215.762q-.54 2.113-2.881 1.924zM20.244 41.947c-.243.858-.492 1.66-.687 2.475-.085.35-.238.473-.592.46-.598-.022-1.197-.007-1.892-.007.474-1.725.925-3.36 1.373-4.995.387-1.406.762-2.814 1.165-4.217.051-.18.232-.462.353-.46 1.563.003 3.13-.01 4.686.111.872.068 1.19.654.99 1.527a45 45 0 0 1-.792 3.078c-.432 1.416-1.28 1.992-2.849 2.026-.58.012-1.159.001-1.754.001zm.464-1.818c1.51.18 1.679.072 2.06-1.234.05-.17.094-.34.141-.51.395-1.458.375-1.482-1.156-1.428-.043 0-.084.025-.182.057l-.862 3.114zM18.443 34.238c.268-.956.454-1.847.77-2.69.411-1.093.201-2.164.057-3.248l-.491-3.717c.671 0 1.308-.031 1.937.028.116.01.256.369.288.58.13.862.225 1.73.353 2.768.682-1.001 1.31-1.853 1.856-2.75.306-.502.657-.724 1.247-.653.392.048.794.01 1.333.01-.688 1.02-1.3 1.928-1.915 2.835-.1.147-.192.3-.305.436-1.394 1.682-2.156 3.638-2.56 5.75-.09.471-.296.72-.844.663-.546-.056-1.102-.012-1.724-.012zM41.625 36.935h-1.547c.135-.534.226-1.008.384-1.46.046-.131.277-.282.425-.285 1.682-.02 3.363-.013 5.132-.013-.141.547-.25 1.052-.414 1.538-.037.11-.267.207-.414.218-.398.029-.8.01-1.21.01-.669 2.467-1.334 4.874-1.968 7.29-.133.509-.343.751-.913.684-.505-.058-1.023-.011-1.633-.011l2.157-7.972z">
+                            </path>
+                            <path fill="#2B0514"
+                                d="M34.136 28.564c.193-.749.293-1.43.553-2.047.235-.56.822-.241 1.242-.23.153.003.427.384.412.576-.032.428-.14.886-.358 1.25-.136.227-.514.36-.81.434-.291.072-.614.016-1.04.016M26.838 32.777c-.657.006-.906-.273-.773-.771.455-1.703.909-3.407 1.427-5.09.094-.306.448-.619.76-.752.516-.221.932.197.788.74q-.662 2.49-1.35 4.974c-.139.503-.423.874-.85.9zM27.92 43.475c-.684-.05-.929-.316-.81-.766.462-1.748.931-3.492 1.462-5.22.085-.275.459-.535.759-.658.465-.188.874.177.75.663-.45 1.752-.909 3.504-1.438 5.234-.1.331-.537.564-.723.747M20.708 40.13l.862-3.115c.098-.032.14-.056.181-.057 1.53-.055 1.551-.03 1.157 1.428q-.068.255-.142.51c-.38 1.306-.55 1.416-2.06 1.234z">
+                            </path>
+                        </svg></li>
+                </ul>
+            </div>
+
+
+            <div class="mobile-sec1 sc-fwbYEO OBjfn d-flex d-md-none">
+                <div class="sc-hAjiLD gLTBbt">
+                    <h2 class="sc-jYrpck cfufcY">Say Goodbye to Hammers &amp; Nails</h2>
+                    <div class="sc-iGGfnY dILILx sc-NcPKd iloiwY">
+                        <div class="sc-hULjhL fjlEbF">
+                            <video class="homepage-video2"
+                                poster="https://d2pkj4iuzqk8im.cloudfront.net/videos/homepage/c_scale,w_900--so_0--q_75--f_jpg--v1--assets--homepage--2023--videos--peelStick.jpg"
+                                playsinline preload="auto" autoplay muted>
+                                <source
+                                    src="./assets/images/c_scale,w_2000--q_auto_best--vc_h264_high_auto--v1--assets--homepage--2023--videos--peelStick.mp4"
+                                    type="video/mp4;">
+                            </video>
+                        </div>
+                        <div class="sc-eDngPS evGmDs"></div>
+                    </div>
+                </div>
+                <div class="sc-hAjiLD gLTBbt">
+                    <h2 class="sc-jYrpck cfufcY">Adjust to Perfection</h2>
+                    <div class="sc-iGGfnY dILILx sc-NcPKd iloiwY">
+                        <div class="sc-hULjhL fjlEbF">
+                            <video class="homepage-video2"
+                                poster="https://d2pkj4iuzqk8im.cloudfront.net/videos/homepage/c_scale,w_900--so_0--q_75--f_jpg--v1--assets--homepage--2023--videos--peelStick.jpg"
+                                playsinline preload="auto" autoplay muted>
+                                <source
+                                    src="./assets/images/c_scale,w_2000--q_auto_best--vc_h264_high_auto--v1--assets--homepage--2023--videos--Adjust.mp4"
+                                    type="video/mp4;">
+                            </video>
+                        </div>
+                        <div class="sc-eDngPS evGmDs"></div>
+                    </div>
+                </div>
+
+                <div class="sc-hAjiLD gLTBbt">
+                    <h2 class="sc-jYrpck cfufcY">Leaves No Marks</h2>
+                    <div class="sc-iGGfnY dILILx sc-NcPKd iloiwY">
+                        <div class="sc-hULjhL fjlEbF">
+                            <video class="homepage-video2"
+                                poster="https://d2pkj4iuzqk8im.cloudfront.net/videos/homepage/c_scale,w_900--so_0--q_75--f_jpg--v1--assets--homepage--2023--videos--peelStick.jpg"
+                                playsinline preload="auto" autoplay muted>
+                                <source
+                                    src="./assets/images/c_scale,w_2000--q_auto_best--vc_h264_high_auto--v1--assets--homepage--2023--videos--noDamage.mp4"
+                                    type="video/mp4;">
+                            </video>
+                        </div>
+                        <div class="sc-eDngPS evGmDs"></div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="sc-eySPmK hjqPPV d-none d-md-flex">
+                <div class="sc-gCZZtz cHVcnP">
+                    <div class="sc-jbifKg kUAlvb">Meet magnetic hanging</div>
+                    <div class="sc-hqurpm kfDqRJ tabs">
+                        <div class="sc-juBBwb cTmsnA" data-tab="1">
+                            <div class="sc-brbyCr fLNdcd">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <div class="bwvcVS active">Just peel and stick</div>
+                        </div>
+                        <div class="sc-juBBwb cTmsnA" data-tab="2">
+                            <div class="sc-brbyCr fLNdcd">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <div class="bwvcVS">Adjust to perfection</div>
+                        </div>
+                        <div class="sc-juBBwb cTmsnA" data-tab="3">
+                            <div class="sc-brbyCr fLNdcd">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <div class="bwvcVS">Leaves no marks</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sc-lfppQV bkvOaQ">
+                    <div class="sc-iGGfnY dILILx sc-cYnRcR bwqUQi">
+                        <div class="sc-hULjhL fjlEbF video-tab" id="tab-1">
+                            <video class="homepage-video"
+                                poster="https://d2pkj4iuzqk8im.cloudfront.net/videos/homepage/c_scale,w_900--so_0--q_75--f_jpg--v1--assets--homepage--2023--videos--peelStick.jpg"
+                                playsinline preload="auto" autoplay muted>
+                                <source
+                                    src="./assets/images/c_scale,w_2000--q_auto_best--vc_h264_high_auto--v1--assets--homepage--2023--videos--peelStick.mp4"
+                                    type="video/mp4;">
+                            </video>
+                        </div>
+                        <div class="sc-hULjhL fjlEbF video-tab" id="tab-2" style="display:none;">
+                            <video class="homepage-video"
+                                poster="https://d2pkj4iuzqk8im.cloudfront.net/videos/homepage/c_scale,w_900--so_0--q_75--f_jpg--v1--assets--homepage--2023--videos--peelStick.jpg"
+                                playsinline preload="auto" autoplay muted>
+                                <source
+                                    src="./assets/images/c_scale,w_2000--q_auto_best--vc_h264_high_auto--v1--assets--homepage--2023--videos--Adjust.mp4"
+                                    type="video/mp4;">
+                            </video>
+                        </div>
+                        <div class="sc-hULjhL fjlEbF video-tab" id="tab-3" style="display:none;">
+                            <video class="homepage-video"
+                                poster="https://d2pkj4iuzqk8im.cloudfront.net/videos/homepage/c_scale,w_900--so_0--q_75--f_jpg--v1--assets--homepage--2023--videos--peelStick.jpg"
+                                playsinline preload="auto" autoplay muted>
+                                <source
+                                    src="./assets/images/c_scale,w_2000--q_auto_best--vc_h264_high_auto--v1--assets--homepage--2023--videos--noDamage.mp4"
+                                    type="video/mp4;">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="  sc-iGGfnY dILILx sc-fNTRKb jbdbYh" style="transform: none; opacity: 1;">
+                <div class="sc-hULjhL fjlEbF">
+                    <video class="homepage-video2"
+                        poster="https://d2pkj4iuzqk8im.cloudfront.net/videos/homepage/c_scale,w_900--so_0--q_75--f_jpg--v1--assets--homepage--2023--videos--quality-desktop-2024.jpg"
+                        playsinline preload="auto" fetchpriority="high" autoplay muted>
+                        <source
+                            src="./assets/images/c_scale,w_2000--q_auto_best--vc_h264_high_auto--v1--assets--homepage--2023--videos--quality-desktop-2024.mp4"
+                            type="video/mp4">
+                    </video>
+
+                </div>
+                <div class="sc-eDngPS evGmDs">
+                    <div class="sc-jZISGa gthFRh">
+                        <h1 class="sc-jgTDfZ jdlRtQ">Museum-Quality Prints</h1>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <div class="mobile-sec d-flex d-md-none">
+                <div class="container">
+
+                    <div class="sc-cdmUDc bElVEU">
+                        <div class="sc-eQKIrX iWunwf">
+                            <h2 class="sc-jczJnW bvKESG">Create a Photo Wall in a Few Taps</h2>
+                            <h3 class="sc-IZvJF lSsPr">Pick the perfect style for your home</h3>
+                        </div>
+                    </div>
+                    <div class="sc-iGGfnY dILILx sc-eUOwFE hmiSqe">
+                        <div class="sc-hULjhL fjlEbF">
+                            <video class="homepage-video2"
+                                poster="https://d2pkj4iuzqk8im.cloudfront.net/videos/homepage/c_scale,w_900--so_0--q_75--f_jpg--v1--assets--homepage--2023--videos--phone.jpg"
+                                playsinline preload="auto" fetchpriority="high" autoplay muted loop
+                                style="object-fit: contain; object-position: center bottom;">
+                                <source
+                                    src="./assets/images/c_scale,w_650--q_auto_best--vc_h264_high_auto--v1--assets--homepage--2023--videos--phone.mp4"
+                                    type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="ratings-section w-100">
+                <div class="container">
+                    <div class="sc-hDRSRr dYZSTZ">
+                        <div class="sc-gNrfBF kHVJRY">We’ve Got You Covered</div>
+                        <div class="sc-dJeInM jfleja">
+                            <div class="sc-fsliKz iPxBRg">
+                                <div class="sc-cnYLwG bxioZZ">
+                                    <img alt="Homepage/Shipping" src="./assets/images/Shipping.webp"
+                                        class="sc-catHVh hdYYpJ sc-fQhWjB frHqGs">
+                                    <div class="sc-cLVyVI jnLraC">Fast &amp; Free Shipping</div>
+                                    <div class="sc-evbZsv dJHkrh">*Free shipping over </div>
+                                </div>
+                            </div>
+                            <div class="sc-fsliKz iPxBRg">
+                                <div class="sc-cnYLwG bxioZZ">
+                                    <img alt="Homepage/Shipping" src="./assets/images/Rating.webp"
+                                        class="sc-catHVh hdYYpJ sc-fQhWjB frHqGs">
+                                    <div class="sc-cLVyVI jnLraC">Rated 4.9/5</div>
+                                    <div class="sc-evbZsv dJHkrh">100k+ App Store ratings</div>
+                                </div>
+                            </div>
+                            <div class="sc-fsliKz iPxBRg">
+                                <div class="sc-cnYLwG bxioZZ">
+                                    <img alt="Homepage/Shipping" src="./assets/images/Satisfaction.webp"
+                                        class="sc-catHVh hdYYpJ sc-fQhWjB frHqGs">
+                                    <div class="sc-cLVyVI jnLraC">Satisfaction Guaranteed</div>
+                                    <div class="sc-evbZsv dJHkrh">Not satisfied? Get a full refund</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="faq-section w-100">
+                <div class="container">
+                    <div class="sc-eNZVMc dtNrmL">
+                        <h2 class="sc-gEVAOR avHmP d-none d-md-block">FAQs</h2>
+                        <h2 class="sc-gEVAOR avHmP d-block d-md-none text-center">Frequently asked <br> question</h2>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        How big are the tiles?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Sizes range from 21x21 cm to 69x91 cm, plus a unique 56x112 cm option.
+                                            Available in various materials and frame colors, including frameless and
+                                            canvas options
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        How long does shipping take?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Usually about a week. Expedited options are available in some countries. We
+                                            will update you with a tracking number after your purchase
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        Is it easy to move the tiles around?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Super easy! They’re designed to be repositioned multiple times without any
+                                            damage
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                        aria-controls="flush-collapseFour">
+                                        And they won't hurt my walls?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Nope, no damage
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                        aria-controls="flush-collapseFive">
+                                        Do you ship internationally?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Yes, to most countries in the world!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <footer class="footer-section w-100 d-none d-md-flex">
+                <div class="container">
+                    <div class="sc-eSbiVI hzIShS">
+                        <div class="sc-gIWNYx kwsEAb">
+                            <div class="sc-jWrgdm kzzyNh">
+                                <div class="sc-bKjSlp eaWncg">
+                                    <div class="sc-fVYTho hGEARm">Products</div>
+                                    <ul class="sc-eNsVPj hRAGJk">
+                                        <a class="sc-iZhWLi ejdXwl" href="#" target="_self">Gift Card</a>
+                                        <a class="sc-iZhWLi ejdXwl" href="#" target="_self">Corporate Gifting</a>
+                                        <a class="sc-iZhWLi ejdXwl" href="#" target="_self">Frame Your Photos</a>
+                                        <a class="sc-iZhWLi ejdXwl" href="#" target="_self">Gallery Walls</a>
+                                    </ul>
+                                </div>
+
+                                <div class="sc-bKjSlp eaWncg">
+                                    <div class="sc-fVYTho hGEARm">Follow Us</div>
+                                    <ul class="sc-eNsVPj hRAGJk">
+                                        <a class="sc-iZhWLi ejdXwl" href="#" target="_self">Instagram</a>
+                                        <a class="sc-iZhWLi ejdXwl" href="#" target="_self">Facebook</a>
+                                        <a class="sc-iZhWLi ejdXwl" href="#" target="_self">Tiktok</a>
+                                        <a class="sc-iZhWLi ejdXwl" href="#" target="_self">Pinterest</a>
+                                        <a class="sc-iZhWLi ejdXwl" href="#" target="_self">Youtube</a>
+                                    </ul>
+                                </div>
+
+                                <div class="sc-bKjSlp eaWncg">
+                                    <div class="sc-fVYTho hGEARm">Resources</div>
+                                    <ul class="sc-eNsVPj hRAGJk">
+                                        <a class="sc-iZhWLi ejdXwl" href="#" target="_self">Cookies Preferences</a>
+                                        <a class="sc-iZhWLi ejdXwl" href="#" target="_self">Accessibility</a>
+                                        <a class="sc-iZhWLi ejdXwl" href="#" target="_self">Terms of Use</a>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sc-xrjIO iIwkws">
+                                <a class="sc-iZhWLi sc-eMJvir ejdXwl hTrbqw" href="#">Language:&nbsp;English<svg
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"
+                                        class="sc-iYyweq BjDLN">
+                                        <path fill="currentColor"
+                                            d="M6.019 8H25.98c1.795 0 2.693 2.48 1.426 3.927l-9.981 11.398c-.788.9-2.063.9-2.843 0l-9.99-11.398C3.326 10.481 4.223 8 6.019 8">
+                                        </path>
+                                    </svg></a>
+                                <div class="sc-comOLD cIoxhp"></div>
+                                <div class="sc-eYPJPk ifpWZq"><a data-testid="privacy-footer"
+                                        class="sc-iZhWLi sc-NaITl ejdXwl eiDKLP" href="#">Privacy
+                                        Policy</a><a data-testid="accessibility-footer"
+                                        class="sc-iZhWLi sc-NaITl ejdXwl eiDKLP" href="#">Accessibility Statement</a><a
+                                        data-testid="impressum-footer" class="sc-iZhWLi sc-NaITl ejdXwl eiDKLP"
+                                        href="#">Impressum</a></div>
+                            </div>
+                        </div>
+
+                        <div class="sc-fKCfhn gnxgrh" id="">
+                            <div class="sc-cmZgWc iWBCpA">
+                                <h3 class="sc-dWfHsP jvAncs">Need Help?</h3>
+                                <span class="sc-RTkeW iqUooe">Talk with our real support team, Every day 7am to midnight
+                                    EST</span>
+                                <button class="sc-eucuRR jJaBRr">Chat With Us</button>
+                            </div>
+
+                            <div class="sc-frlEjV bNtDlL">© Copyright 2015-2024 Mixtiles, LTD</div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <footer class="mobile-footer d-flex d-md-none w-100  ">
+                <div class="sc-bpPXDY daLGwL">
+                    <div class="sc-cmZgWc iWBCpA">
+                        <h3 class="sc-dWfHsP jvAncs">Need Help?</h3>
+                        <span class="sc-RTkeW iqUooe">Talk with our real support team, Every day 7am to midnight
+                            EST</span>
+                        <button class="sc-eucuRR jJaBRr">Chat With Us</button>
+                    </div>
+
+                    <div class="sc-cYWyaL gOJZhh"></div>
+
+                    <div class="sc-lkfKlO dGlbZa">
+                        <h3 class="sc-hlDWUt haUBcM">Follow Us</h3>
+                        <div class="sc-ehrzGA bECSMT">
+                            <a href="#" title="Mixtiles Instagram" class="sc-groajU jzAXGn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="43" fill="none">
+                                    <rect width="43" height="43" x="0.5" fill="#F2E9E9" fill-opacity="0.6" rx="10">
+                                    </rect>
+                                    <path fill="#472C35" fill-rule="evenodd"
+                                        d="M13.975 18.028a4.46 4.46 0 0 1 4.46-4.46h7.134a4.46 4.46 0 0 1 4.46 4.46v7.135a4.46 4.46 0 0 1-4.46 4.46h-7.135a4.46 4.46 0 0 1-4.46-4.46zm14.27-1.784a.894.894 0 0 0-1.726-.35.892.892 0 1 0 1.725.35M22 17.136a4.46 4.46 0 1 1 0 8.92 4.46 4.46 0 0 1 0-8.92m-2.675 4.46a2.676 2.676 0 1 1 5.35 0 2.676 2.676 0 0 1-5.35 0"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                            <a href="#" title="Mixtiles Facebook" class="sc-groajU jzAXGn"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="44" height="43" fill="none">
+                                    <rect width="43" height="43" x="0.5" fill="#F2E9E9" fill-opacity="0.6" rx="10">
+                                    </rect>
+                                    <path fill="#472C35"
+                                        d="M23.12 30.769v-8.154h2.62l.656-3.399H23.12V17.86q0-2.038 1.966-2.038h1.31v-3.399h-2.62c-2.409 0-3.932 1.958-3.932 4.757v2.037h-2.62v3.398h2.62v8.155z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="#" title="Mixtiles Tiktok" class="sc-groajU jzAXGn"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="44" height="43" fill="none">
+                                    <rect width="43" height="43" x="0.5" fill="#F2E9E9" fill-opacity="0.6" rx="10">
+                                    </rect>
+                                    <path fill="#472C35"
+                                        d="M29.53 19.954a4.85 4.85 0 0 1-2.688-.53 4.7 4.7 0 0 1-1.71-1.524v7.07a5.1 5.1 0 0 1-.909 2.903 5.36 5.36 0 0 1-2.417 1.925 5.54 5.54 0 0 1-3.113.296 5.44 5.44 0 0 1-2.759-1.43 5.2 5.2 0 0 1-1.475-2.675 5.1 5.1 0 0 1 .306-3.02 5.27 5.27 0 0 1 1.985-2.344 5.5 5.5 0 0 1 2.994-.88c.113 0 .222.01.332.016v2.575c-.11-.013-.22-.032-.332-.032-.73 0-1.429.28-1.945.78a2.63 2.63 0 0 0-.805 1.887c0 .707.29 1.385.805 1.885s1.216.782 1.945.782c1.52 0 2.86-1.161 2.86-2.635l.027-12.007h2.54a4.54 4.54 0 0 0 1.414 2.816 4.8 4.8 0 0 0 2.947 1.28v2.862">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="#" title="Mixtiles Pinterest" class="sc-groajU jzAXGn"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="44" height="43" fill="none">
+                                    <rect width="43" height="43" x="0.5" fill="#F2E9E9" fill-opacity="0.6" rx="10">
+                                    </rect>
+                                    <path fill="#472C35"
+                                        d="M26.856 13.832c1.132.867 1.92 2.117 2.132 3.707.086.64.103 1.286.057 1.92-.112 1.518-.59 2.973-1.38 4.097-.799 1.137-1.916 1.94-3.298 2.137a5 5 0 0 1-1.07.031h-.001c-.832-.068-1.295-.4-1.838-.789a15 15 0 0 0-.326-.23c-.215 1.139-.46 2.25-.833 3.23-.41 1.08-.976 2.006-1.825 2.645l-.251.189-.043-.32c-.377-2.766.204-5.011.769-7.195.195-.754.388-1.5.536-2.242-.335-.625-.421-1.441-.308-2.213a3.9 3.9 0 0 1 .532-1.499c.277-.437.645-.767 1.093-.903.345-.104.73-.09 1.15.08 1.385.57.901 2.142.418 3.71-.152.495-.304.988-.392 1.448-.179.922-.077 1.674.927 1.882a1.97 1.97 0 0 0 1.496-.262c.595-.371 1.066-1.046 1.39-1.857.336-.863.51-1.78.514-2.706.005-1.217-.289-2.364-.933-3.04a3.87 3.87 0 0 0-2.53-1.214c-.885-.07-1.794.142-2.6.572a5.1 5.1 0 0 0-1.99 1.877 4.5 4.5 0 0 0-.586 3.04c.054.342.213.614.366.874.339.579.65 1.11.053 2.206l-.067.124-.135-.03c-.94-.215-1.577-.687-1.985-1.35-.402-.654-.574-1.49-.588-2.447v-.006c.02-1.808.649-3.407 1.706-4.607 1.06-1.206 2.554-2.007 4.295-2.208q.512-.06 1.028-.06c1.706-.005 3.307.483 4.517 1.409">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="#" title="Mixtiles Youtube" class="sc-groajU jzAXGn"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="44" height="43" fill="none">
+                                    <rect width="43" height="43" x="0.5" fill="#F2E9E9" fill-opacity="0.6" rx="10">
+                                    </rect>
+                                    <path fill="#472C35" fill-rule="evenodd"
+                                        d="M29.13 14.982a38 38 0 0 0-3.37-.234 112 112 0 0 0-3.373-.032c-1.123 0-2.25 0-3.373.032a38 38 0 0 0-3.373.235c-.51.064-.985.294-1.352.655a2.7 2.7 0 0 0-.756 1.385 14.4 14.4 0 0 0-.28 2.283 44 44 0 0 0-.043 2.29c0 .745 0 1.511.04 2.29.04.773.12 1.543.28 2.282.118.55.388 1.029.756 1.385.37.359.84.595 1.351.655 1.117.134 2.243.2 3.373.234 1.121.033 2.249.033 3.373.033s2.252 0 3.374-.033a38 38 0 0 0 3.37-.234c.511-.064.986-.294 1.352-.655.384-.377.648-.859.759-1.385.158-.739.239-1.508.278-2.283.04-.763.04-1.537.04-2.289v-.038c0-1.493 0-3.076-.314-4.536a2.72 2.72 0 0 0-.757-1.385 2.34 2.34 0 0 0-1.355-.655m-8.463 3.577 4.723 3.048-4.724 2.612z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sc-cYWyaL gOJZhh"></div>
+                    <ul class="sc-dEWnit crdPAK">
+                        <li><a class="sc-eWidsO eePGUH" data-discover="true" href="#" target="_self">Gift Card</a>
+                        </li>
+                        <li><a class="sc-eWidsO eePGUH" data-discover="true" href="#" target="_self">Corporate
+                                Gifting</a></li>
+                        <li><a class="sc-eWidsO eePGUH" data-discover="true" href="#" target="_self">Change
+                                Language</a></li>
+                        <li><a data-testid="careers-footer" class="sc-eWidsO eePGUH" data-discover="true"
+                                href="#">Careers</a></li>
+                        <li><a class="sc-eWidsO eePGUH" data-discover="true" href="#">Cookies Preferences</a></li>
+                    </ul>
+                    <div class="sc-cYWyaL gOJZhh"></div>
+                    <div class="sc-fueQRQ dpdfLB">
+                        <div class="sc-cHNdQp eBiDSC"><span><a data-testid="privacy-footer"
+                                    class="sc-eWidsO sc-cjQqrn eePGUH geelzf" data-discover="true" href="#">Privacy
+                                    Policy</a>&nbsp;&nbsp;·&nbsp;&nbsp;</span><span><a data-testid="impressum-footer"
+                                    class="sc-eWidsO sc-cjQqrn eePGUH geelzf" data-discover="true"
+                                    href="#">Impressum</a><br></span><span><a data-testid="terms-footer"
+                                    class="sc-eWidsO sc-cjQqrn eePGUH geelzf" data-discover="true" href="#">Terms of
+                                    Use</a>&nbsp;&nbsp;·&nbsp;&nbsp;</span><span><a data-testid="accessibility-footer"
+                                    class="sc-eWidsO sc-cjQqrn eePGUH geelzf" data-discover="true"
+                                    href="#">Accessibility Statement</a><br></span><span><a
+                                    data-acsb-custom-trigger="true" class="sc-eWidsO sc-cjQqrn eePGUH geelzf"
+                                    data-discover="true" href="#">Accessibility</a><br></span></div>© Copyright
+                        2015-2024 Mixtiles, LTD
+                    </div>
+                </div>
+            </footer>
+
+
+        </div>
+        <a href="./photos.html">
+
+            <div class="sc-fBNwaH fqSlNW" style="transform: none;"><button data-testid="cta-homepage-lets-go"
+                    class="sc-jNCwWG ecRiFp">Shop Now</button></div>
+        </a>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        let lastScrollTop = 0;
+        const header = document.querySelector('.QZoRt');
+
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // Scrolling down, show the header
+                header.style.transform = 'translateY(0)';
+                header.style.transition = 'transform 0.5s ease';
+            } else {
+                // Scrolling up, hide the header
+                header.style.transform = 'translateY(-100%)';
+                header.style.transition = 'transform 0.5s ease';
+            }
+
+            lastScrollTop = scrollTop;
+        });
+
+    </script>
+
+    <script>
+        document.querySelectorAll('.sc-juBBwb').forEach((tab, index, tabs) => {
+            tab.addEventListener('click', function () {
+                // Remove active class from all tabs
+                document.querySelectorAll('.bwvcVS').forEach(tabText => {
+                    tabText.classList.remove('active');
+                });
+
+                // Hide all videos
+                document.querySelectorAll('.video-tab').forEach(videoTab => {
+                    videoTab.style.display = 'none';
+                });
+
+                // Add active class to the clicked tab
+                this.querySelector('.bwvcVS').classList.add('active');
+
+                // Show the corresponding video
+                const tabId = this.getAttribute('data-tab');
+                const activeVideoTab = document.getElementById(`tab-${tabId}`);
+                activeVideoTab.style.display = 'block';
+
+                // Update progress bar and handle video events
+                const video = activeVideoTab.querySelector('.homepage-video');
+                const progressBarFill = this.querySelector('.progress-fill');
+
+                video.currentTime = 0; // Reset video to the start
+                video.play(); // Start video playback when the tab is clicked
+
+                // Reset the progress bar on tab click
+                progressBarFill.style.height = '0%';
+
+                // Handle video progress while video is playing
+                const updateProgress = () => {
+                    video.addEventListener('timeupdate', function () {
+                        const progress = (video.currentTime / video.duration) * 100;
+                        progressBarFill.style.height = `${progress}%`;
+                    });
+                };
+
+                updateProgress();
+
+                // Handle video end (auto switch to next tab)
+                video.addEventListener('ended', function () {
+                    const nextTab = tabs[(index + 1) % tabs.length]; // Loop to the first tab after the last one
+                    const nextProgressBarFill = nextTab.querySelector('.progress-fill');
+
+                    // Reset the progress bar of the current tab
+                    progressBarFill.style.height = '0%';
+
+                    // Automatically trigger the next tab's click event
+                    nextTab.click();
+
+                    // Reset the progress bar of the next tab
+                    nextProgressBarFill.style.height = '0%';
+                });
+            });
+        });
+
+        // Prevent autoplay and progress bar filling on page load
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.homepage-video').forEach(video => {
+                video.pause(); // Ensure all videos are paused
+            });
+            document.querySelectorAll('.progress-fill').forEach(progressBarFill => {
+                progressBarFill.style.height = '0%'; // Reset progress bars on page load
+            });
+        });
+
+
+
+    </script>
+    <script>
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const hamburgerBtn2 = document.getElementById('hamburgerBtn2');
+        const drawer = document.getElementById('drawer');
+        const closeDrawerBtn = document.getElementById('closeDrawerBtn');
+        const overlay = document.getElementById('drawerOverlay');
+
+        // Open the drawer and overlay when the hamburger button is clicked
+        hamburgerBtn.addEventListener('click', () => {
+            drawer.classList.add('is-open');
+            overlay.classList.add('is-visible');
+            document.body.classList.add('no-scroll'); // Prevent background scrolling
+        });
+
+        hamburgerBtn2.addEventListener('click', () => {
+            drawer.classList.add('is-open');
+            overlay.classList.add('is-visible');
+            document.body.classList.add('no-scroll'); // Prevent background scrolling
+        });
+
+        // Close the drawer and overlay when the close icon is clicked
+        closeDrawerBtn.addEventListener('click', () => {
+            drawer.classList.remove('is-open');
+            overlay.classList.remove('is-visible');
+            document.body.classList.remove('no-scroll'); // Re-enable background scrolling
+        });
+
+        // Close the drawer and overlay when clicking outside the drawer (on the overlay)
+        overlay.addEventListener('click', () => {
+            drawer.classList.remove('is-open');
+            overlay.classList.remove('is-visible');
+            document.body.classList.remove('no-scroll'); // Re-enable background scrolling
+        });
+
+
+
+    </script>
+</body>
+
+</html>
