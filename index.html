@@ -650,11 +650,10 @@
                                         <div class="">
                                             <div class="sc-fJzAgT hgKULt">
                                                 <div class="sc-iGGfnY dILILx sc-bIKUgU kKIhUS">
-                                                    <div class="sc-hULjhL fjlEbF">
-                                                        <video class="homepage-video2"
+                                                    <div class="sc-hULjhL fjlEbF" id="video-container-1">
+                                                        <video class="homepage-video2" id="hover-video-1"
                                                             poster="https://d2pkj4iuzqk8im.cloudfront.net/videos/homepage/c_scale,w_900--so_0--q_75--f_jpg--v1--assets--homepage--2023--testimonials--beccablas.jpg"
-                                                            playsinline preload="auto" fetchpriority="high" autoplay
-                                                            muted loop>
+                                                            playsinline preload="auto" muted loop>
                                                             <source
                                                                 src="./assets/images/c_scale,w_650--q_auto_best--vc_h264_high_auto--v1--assets--homepage--2023--testimonials--beccablas.mp4"
                                                                 type="video/mp4">
@@ -671,11 +670,10 @@
                                         <div class="">
                                             <div class="sc-fJzAgT hgKULt">
                                                 <div class="sc-iGGfnY dILILx sc-bIKUgU kKIhUS">
-                                                    <div class="sc-hULjhL fjlEbF">
-                                                        <video class="homepage-video2"
+                                                    <div class="sc-hULjhL fjlEbF" id="video-container-2">
+                                                        <video class="homepage-video2" id="hover-video-2"
                                                             poster="https://d2pkj4iuzqk8im.cloudfront.net/videos/homepage/c_scale,w_900--so_0--q_75--f_jpg--v1--assets--homepage--2023--testimonials--codyandbreea.jpg"
-                                                            playsinline preload="auto" fetchpriority="high" autoplay
-                                                            muted loop>
+                                                            playsinline preload="auto" muted loop>
                                                             <source
                                                                 src="https://d2pkj4iuzqk8im.cloudfront.net/videos/homepage/c_scale,w_650--q_auto:best--vc_h264:high:auto--v1--assets--homepage--2023--testimonials--codyandbreea.mp4"
                                                                 type="video/mp4">
@@ -692,11 +690,10 @@
                                         <div class="">
                                             <div class="sc-fJzAgT hgKULt">
                                                 <div class="sc-iGGfnY dILILx sc-bIKUgU kKIhUS">
-                                                    <div class="sc-hULjhL fjlEbF">
-                                                        <video class="homepage-video2"
+                                                    <div class="sc-hULjhL fjlEbF" id="video-container-3">
+                                                        <video class="homepage-video2" id="hover-video-3"
                                                             poster="https://d2pkj4iuzqk8im.cloudfront.net/videos/homepage/c_scale,w_900--so_0--q_75--f_jpg--v1--assets--homepage--2023--testimonials--chantellemkerr.jpg"
-                                                            playsinline preload="auto" fetchpriority="high" autoplay
-                                                            muted loop>
+                                                            playsinline preload="auto" muted loop>
                                                             <source
                                                                 src="https://d2pkj4iuzqk8im.cloudfront.net/videos/homepage/c_scale,w_650--q_auto:best--vc_h264:high:auto--v1--assets--homepage--2023--testimonials--chantellemkerr.mp4"
                                                                 type="video/mp4">
@@ -713,11 +710,10 @@
                                         <div class="">
                                             <div class="sc-fJzAgT hgKULt">
                                                 <div class="sc-iGGfnY dILILx sc-bIKUgU kKIhUS">
-                                                    <div class="sc-hULjhL fjlEbF">
-                                                        <video class="homepage-video2"
+                                                    <div class="sc-hULjhL fjlEbF" id="video-container-4">
+                                                        <video class="homepage-video2" id="hover-video-4"
                                                             poster="https://d2pkj4iuzqk8im.cloudfront.net/videos/homepage/c_scale,w_900--so_0--q_75--f_jpg--v1--assets--homepage--2023--testimonials--taliyahugc.jpg"
-                                                            playsinline preload="auto" fetchpriority="high" autoplay
-                                                            muted loop>
+                                                            playsinline preload="auto" muted loop>
                                                             <source
                                                                 src="./assets/images/c_scale,w_650--q_auto_best--vc_h264_high_auto--v1--assets--homepage--2023--testimonials--taliyahugc.mp4"
                                                                 type="video/mp4">
@@ -1271,7 +1267,43 @@
         });
     </script>
 
+    <script>
+        const videoContainer = document.getElementById('video-container-1');
+        const videoContainer2 = document.getElementById('video-container-2');
+        const videoContainer3 = document.getElementById('video-container-3');
+        const videoContainer4 = document.getElementById('video-container-4');
+        const video = document.getElementById('hover-video-1');
+        const video2 = document.getElementById('hover-video-2');
+        const video3 = document.getElementById('hover-video-3');
+        const video4 = document.getElementById('hover-video-4');
 
+        videoContainer.addEventListener('mouseenter', () => {
+            video.play();
+        });
+        videoContainer2.addEventListener('mouseenter', () => {
+            video2.play();
+        });
+        videoContainer3.addEventListener('mouseenter', () => {
+            video3.play();
+        });
+        videoContainer4.addEventListener('mouseenter', () => {
+            video4.play();
+        });
+
+
+        videoContainer.addEventListener('mouseleave', () => {
+            video.pause();
+        });
+
+        videoContainer2.addEventListener('mouseleave', () => {
+            video2.pause();
+        }); videoContainer3.addEventListener('mouseleave', () => {
+            video3.pause();
+        }); videoContainer4.addEventListener('mouseleave', () => {
+            video4.pause();
+        });
+
+    </script>
 
     <script>
         let lastScrollTop = 0;
