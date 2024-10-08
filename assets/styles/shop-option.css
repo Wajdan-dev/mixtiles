@@ -87,8 +87,8 @@
 }
 
 .UploadButton.round {
-    height: 170px;
-    width: 170px;
+    width: 47px;
+    height: 47px;
     background: #fff;
     box-shadow: 0 8px 14px #00000012;
     border-radius: 1285.23px;
@@ -327,5 +327,12 @@
     }
     .cQIHzj {
         min-width: unset;
+    }
+    
+}
+
+@media(max-width:776px){
+    .iJvhYD{
+        width: 100%;
     }
 }
