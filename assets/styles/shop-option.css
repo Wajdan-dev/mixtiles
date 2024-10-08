@@ -1,0 +1,126 @@
+
+
+.option-bar{
+    filter: drop-shadow(rgba(0, 0, 0, 0.03) 0px 4px 4px);
+    transition: max-height 0.1s ease-in-out, opacity 0.1s ease-in-out;
+    max-height: 100%;
+}
+
+.bIEOmB {
+    border-top: none;
+    transition: opacity 0.25s;
+    background: transparent;
+    padding: 0px;
+}
+
+.iJvhYD {
+    box-sizing: border-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    padding: 11px 4px 13px 10px;
+    border: 1px solid rgb(242, 233, 233);
+    border-radius: 10px;
+    width: fit-content;
+    max-width: unset;
+}
+
+.gYCcEE {
+    box-sizing: border-box;
+    opacity: 1;
+    display: flex;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    align-items: center;
+    user-select: none;
+    transition: opacity 0.25s;
+    position: relative;
+    flex: 1 1 0%;
+}
+
+.cQIHzj {
+    box-sizing: border-box;
+    text-transform: capitalize;
+    padding: 6px 0px;
+    display: flex;
+    min-width: 50px;
+    flex-direction: column;
+    width: 58px;
+    gap: 4px;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(71, 44, 53);
+    cursor: pointer;
+}
+
+.kMwgNE {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.ffpHcK {
+    width: 1px;
+    height: 41px;
+    background-color: rgb(242, 233, 233);
+}
+
+.jkbUij {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.hakgnB {
+    height: 20px;
+}
+
+.gHjbDB {
+    margin: 0px 10px 0px 16px;
+}
+
+.UploadButton.round {
+    height: 170px;
+    width: 170px;
+    background: #fff;
+    box-shadow: 0 8px 14px #00000012;
+    border-radius: 1285.23px;
+    border: unset;
+}
+
+.UploadButton.round.control .plus-icon, .UploadButton.round.control .plus-icon svg {
+    height: 21px;
+    width: 21px;
+    margin-bottom: 2px;
+}
+@media (min-width: 767px) {
+    .UploadButton.round.control {
+        box-shadow: unset;
+        width: 47px;
+        height: 47px;
+        border: none;
+        bottom: 0;
+        background: #eb237121;
+    }
+}
+
+@media (min-width: 48.0625em) {
+    .option-bar{
+        position: fixed;
+        bottom: 40px;
+        right: 0px;
+        left: 0px;
+        width: fit-content;
+        margin: auto;
+        pointer-events: bounding-box;
+    }
+    .cQIHzj {
+        min-width: unset;
+    }
+}
