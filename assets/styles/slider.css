@@ -103,13 +103,13 @@
     min-height: 100px;
 }
 
-.fjlEbF {
+.fjlEbF2 {
     width: 100%;
     height: 100%;
     z-index: 0;
     background-position: 50% center;
     margin: auto;
-    position: absolute;
+    /* position: absolute; */
     inset: -100%;
 }
 
@@ -130,13 +130,69 @@
     line-height: 1.5;
 }
 
+.jmoEJo {
+    border: 0px;
+    border-radius: 60px;
+    background: rgba(30, 30, 30, 0.5);
+    backdrop-filter: blur(27px);
+    width: 48px;
+    height: 48px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+}
 
-@media (min-width: 48.0625em) {
+.jmoEJo > svg {
+    width: 24px;
+    height: 24px;
+}
+
+
+.mute-unmute {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.evGmDs2 {
+    position: absolute;
+    z-index: 2;
+    /* inset: 0px; */
+}
+/* On large screens, show on hover */
+@media (min-width: 768px) {
+    .video-container:hover .mute-unmute {
+        opacity: 1;
+    }
+}
+
+/* Always show on small screens */
+@media (max-width: 767px) {
+    .mute-unmute {
+        opacity: 1;
+    }
+}
+
+@media(min-width:1200px){
+    .hgKULt {
+        margin-bottom: 22px;
+        max-width: 270px;
+    }
+}
+
+@media (min-width: 1400) {
     .hgKULt {
         margin-bottom: 22px;
         max-width: 305px;
     }
 }
+
 
 @media (max-width: 776px) {
     .slick-prev, .slick-next{
