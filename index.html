@@ -1268,42 +1268,42 @@
     </script>
 
     <script>
-        const videoContainer = document.getElementById('video-container-1');
-        const videoContainer2 = document.getElementById('video-container-2');
-        const videoContainer3 = document.getElementById('video-container-3');
-        const videoContainer4 = document.getElementById('video-container-4');
-        const video = document.getElementById('hover-video-1');
-        const video2 = document.getElementById('hover-video-2');
-        const video3 = document.getElementById('hover-video-3');
-        const video4 = document.getElementById('hover-video-4');
+        const videoContainers = [
+            { container: document.getElementById('video-container-1'), video: document.getElementById('hover-video-1') },
+            { container: document.getElementById('video-container-2'), video: document.getElementById('hover-video-2') },
+            { container: document.getElementById('video-container-3'), video: document.getElementById('hover-video-3') },
+            { container: document.getElementById('video-container-4'), video: document.getElementById('hover-video-4') }
+        ];
 
-        videoContainer.addEventListener('mouseenter', () => {
-            video.play();
-        });
-        videoContainer2.addEventListener('mouseenter', () => {
-            video2.play();
-        });
-        videoContainer3.addEventListener('mouseenter', () => {
-            video3.play();
-        });
-        videoContainer4.addEventListener('mouseenter', () => {
-            video4.play();
-        });
+        const isLargeScreen = window.matchMedia('(min-width: 768px)'); // Adjust the breakpoint as needed
 
+        function handleVideoPlayPause() {
+            if (isLargeScreen.matches) {
+                // For large screens, play video on hover
+                videoContainers.forEach(({ container, video }) => {
+                    container.addEventListener('mouseenter', () => {
+                        video.play();
+                    });
 
-        videoContainer.addEventListener('mouseleave', () => {
-            video.pause();
-        });
+                    container.addEventListener('mouseleave', () => {
+                        video.pause();
+                    });
+                });
+            } else {
+                // For small screens, autoplay videos without hover
+                videoContainers.forEach(({ video }) => {
+                    video.play();
+                });
+            }
+        }
 
-        videoContainer2.addEventListener('mouseleave', () => {
-            video2.pause();
-        }); videoContainer3.addEventListener('mouseleave', () => {
-            video3.pause();
-        }); videoContainer4.addEventListener('mouseleave', () => {
-            video4.pause();
-        });
+        // Call the function initially
+        handleVideoPlayPause();
 
+        // Also listen for screen resize events to reapply the behavior
+        isLargeScreen.addListener(handleVideoPlayPause);
     </script>
+
 
     <script>
         let lastScrollTop = 0;
