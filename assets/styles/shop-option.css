@@ -4,6 +4,7 @@
     filter: drop-shadow(rgba(0, 0, 0, 0.03) 0px 4px 4px);
     transition: max-height 0.1s ease-in-out, opacity 0.1s ease-in-out;
     max-height: 100%;
+    background-color: white;
 }
 
 .bIEOmB {
@@ -99,6 +100,209 @@
     width: 21px;
     margin-bottom: 2px;
 }
+
+.jsmxYw {
+    display: flex;
+    flex-shrink: 0;
+    padding: 0px 20px 20px;
+    gap: 10px;
+    overflow: auto hidden;
+}
+
+.gFVnrG {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: start;
+    align-items: start;
+    flex-shrink: 0;
+    cursor: pointer;
+    border-radius: 9px;
+    overflow: hidden;
+    box-sizing: border-box;
+    min-width: 142px;
+    border: 2px solid rgb(235, 35, 113);
+}
+.dUaAVj {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 6px 7px;
+    z-index: 1;
+}
+.gKEBJX {
+    height: 22px;
+    border-radius: 33px;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(43, 5, 20, 0.07) 0px 3px 4px 0px, rgba(43, 5, 20, 0.04) 0px 4px 13px 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: rgb(43, 5, 20);
+    gap: 7.5px;
+}
+.gyKLYl {
+    flex-shrink: 0;
+    width: 4px;
+    margin-left: 8px;
+}
+.gvTqFd {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    margin-right: 9px;
+}
+
+.kTPHJo {
+    position: relative;
+    width: 142px;
+    height: 106px;
+    overflow: hidden;
+}
+.kfXEIy {
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+}
+.ejxOZY {
+    max-width: 142px;
+    box-sizing: border-box;
+    padding: 0px 0px 0px 12px;
+    color: rgb(235, 35, 113);
+}
+.jtEPKu {
+    display: flex;
+    gap: 4px;
+}
+.hxyyZK {
+    text-transform: capitalize;
+    padding: 11px 0px 9px;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+    font-weight: 600;
+}
+
+.blsQFU {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: start;
+    align-items: start;
+    flex-shrink: 0;
+    cursor: pointer;
+    border-radius: 9px;
+    overflow: hidden;
+    box-sizing: border-box;
+    min-width: 142px;
+    border: 2px solid rgb(242, 233, 233);
+}
+
+.kbxLBs {
+    max-width: 142px;
+    box-sizing: border-box;
+    padding: 0px 0px 0px 12px;
+    color: rgb(43, 5, 20);
+}
+
+#material {
+    display: none; /* Initially hidden */
+}
+#size-card{
+    display: none; /* Initially hidden */
+    
+}
+
+#filter{
+    display: none;
+}
+
+.kfTCvY {
+    display: flex;
+    flex-shrink: 0;
+    padding: 2px 20px 14px;
+    overflow: auto hidden;
+    gap: 16px;
+}
+
+.dFDDbt {
+    display: flex;
+    border-radius: 6px;
+    gap: 16px;
+    transition: 150ms ease-in-out;
+}
+
+.cLVJXl {
+    position: relative;
+    z-index: 2;
+}
+
+.kInLVs {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.fDStDt {
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    object-fit: cover;
+    box-shadow: rgb(235, 35, 113) 0px 0px 0px 2px;
+}
+.jSdTrj {
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: rgb(235, 35, 113);
+}
+
+.dFDDbt {
+    display: flex;
+    border-radius: 6px;
+    gap: 16px;
+    transition: 150ms ease-in-out;
+}
+.cLVJXl {
+    position: relative;
+    z-index: 2;
+}
+.kInLVs {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.cfywAj {
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    box-shadow: rgb(235, 231, 231) 0px 0px 0px 1px;
+    object-fit: cover;
+}
+.kkIcxM {
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: rgb(43, 5, 20);
+}
+
+
 @media (min-width: 767px) {
     .UploadButton.round.control {
         box-shadow: unset;
@@ -119,6 +323,7 @@
         width: fit-content;
         margin: auto;
         pointer-events: bounding-box;
+        z-index: 9;
     }
     .cQIHzj {
         min-width: unset;
