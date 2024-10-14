@@ -56,7 +56,7 @@
 }
 
 .slick-next {
-    right: -25px;
+    right: -15px !important;
 }
 .slick-prev, .slick-next {
     z-index: 10 !important;  /* Ensures arrows appear on top */
