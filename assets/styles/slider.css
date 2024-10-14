@@ -94,8 +94,21 @@
     overflow: hidden;
     scroll-snap-align: center;
 }
-
-
+.jYzSJo {
+    place-items: center;
+    border-radius: 50%;
+    z-index: 1;
+    border: 1px solid rgb(235, 231, 231);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 3px 20px, rgba(43, 5, 20, 0.06) 0px 4px 13px;
+    width: 52px !important;
+    height: 52px !important;
+    background: white !important;
+    display: grid !important;
+    color: rgb(149, 130, 137) !important;
+}
+.slick-prev:before ,.slick-next:before{
+    content: none !important;
+}
 .kKIhUS {
     height: 407px;
 }
