@@ -41,7 +41,7 @@
     line-height: 0;
     position: absolute;
     top: 50%;
-    display: block;
+    display: block !important;
     width: 20px;
     height: 20px;
     padding: 0;
@@ -58,7 +58,9 @@
 .slick-next {
     right: -25px;
 }
-
+.slick-prev, .slick-next {
+    z-index: 10 !important;  /* Ensures arrows appear on top */
+}
 .sZkXS {
     width: 52px;
     height: 52px;
@@ -179,26 +181,25 @@
     }
 }
 
-@media(min-width:1200px){
+@media (min-width: 1400px) {
+    .hgKULt {
+        margin-bottom: 22px;
+        max-width: 305px !important;
+    }
+}
+
+@media (min-width: 1200px) {
     .hgKULt {
         margin-bottom: 22px;
         max-width: 270px;
     }
 }
 
-@media (min-width: 1400) {
-    .hgKULt {
-        margin-bottom: 22px;
-        max-width: 305px;
-    }
-}
-
-
 @media (max-width: 776px) {
-    .slick-prev, .slick-next{
+    .slick-prev, .slick-next {
         display: none !important;
     }
-    .hgKULt{
+    .hgKULt {
         width: 100%;
         max-width: 100%;
     }
